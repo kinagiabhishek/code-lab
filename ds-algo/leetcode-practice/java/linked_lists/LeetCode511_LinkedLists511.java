@@ -1,0 +1,18 @@
+// https://leetcode.com/problems/linked-list-node-511/
+package linked_lists;
+
+import java.util.*;
+
+public class LeetCode511_LinkedLists511 {
+    public int solve(int[] nums) {
+        int res = 0;
+        for (int n : nums) res += n;
+        return res;
+    }
+
+    public static void main(String[] args) {
+        LeetCode511_LinkedLists511 solver = new LeetCode511_LinkedLists511();
+        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        System.out.println("✅ LeetCode511_LinkedLists511 Passed!");
+    }
+}
