@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/validate-binary-search-tree/
 package trees;
 public class LeetCode98_ValidateBinarySearchTree {
     public static class TreeNode { int val; TreeNode left, right; TreeNode(int val) { this.val = val; } }
