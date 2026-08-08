@@ -1,0 +1,16 @@
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+package two_pointers;
+public class LeetCode26_RemoveDuplicatesFromSortedArray {
+    public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) return 0;
+        int i = 0;
+        for (int j = 1; j < nums.length; j++) {
+            if (nums[j] != nums[i]) { i++; nums[i] = nums[j]; }
+        }
+        return i + 1;
+    }
+    public static void main(String[] args) {
+        assert new LeetCode26_RemoveDuplicatesFromSortedArray().removeDuplicates(new int[]{1,1,2}) == 2;
+        System.out.println("✅ LeetCode26_RemoveDuplicatesFromSortedArray Passed!");
+    }
+}
