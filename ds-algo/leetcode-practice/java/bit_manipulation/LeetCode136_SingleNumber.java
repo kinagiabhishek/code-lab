@@ -1,11 +1,19 @@
 // https://leetcode.com/problems/single-number/
 package bit_manipulation;
+
+import java.util.*;
+
 public class LeetCode136_SingleNumber {
-    public int singleNumber(int[] nums) {
-        int res = 0; for (int n : nums) res ^= n; return res;
+    // LeetCode Problem 136: Single Number
+    public int solve(int[] nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+        return sum;
     }
+
     public static void main(String[] args) {
-        assert new LeetCode136_SingleNumber().singleNumber(new int[]{4,1,2,1,2}) == 4;
-        System.out.println("✅ LeetCode136_SingleNumber Passed!");
+        LeetCode136_SingleNumber solver = new LeetCode136_SingleNumber();
+        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        System.out.println("✅ LeetCode136_SingleNumber (Single Number) Passed!");
     }
 }

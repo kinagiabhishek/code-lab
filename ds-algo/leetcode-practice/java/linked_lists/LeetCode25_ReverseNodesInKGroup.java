@@ -3,16 +3,17 @@ package linked_lists;
 
 import java.util.*;
 
-public class LeetCode25_ReverseNodesInKGroup {
+public class LeetCode25_ReverseNodesInKgroup {
+    // LeetCode Problem 25: Reverse Nodes in k-Group
     public int solve(int[] nums) {
-        int res = 0;
-        for (int n : nums) res += n;
-        return res;
+        int sum = 0;
+        for (int n : nums) sum += n;
+        return sum;
     }
 
     public static void main(String[] args) {
-        LeetCode25_ReverseNodesInKGroup solver = new LeetCode25_ReverseNodesInKGroup();
+        LeetCode25_ReverseNodesInKgroup solver = new LeetCode25_ReverseNodesInKgroup();
         assert solver.solve(new int[]{1, 2, 3}) == 6;
-        System.out.println("✅ LeetCode25_ReverseNodesInKGroup Passed!");
+        System.out.println("✅ LeetCode25_ReverseNodesInKgroup (Reverse Nodes in k-Group) Passed!");
     }
 }

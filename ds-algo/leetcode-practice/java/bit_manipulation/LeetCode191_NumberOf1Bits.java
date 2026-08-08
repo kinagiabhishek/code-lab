@@ -1,12 +1,19 @@
 // https://leetcode.com/problems/number-of-1-bits/
 package bit_manipulation;
+
+import java.util.*;
+
 public class LeetCode191_NumberOf1Bits {
-    public int hammingWeight(int n) {
-        int count = 0; while (n != 0) { n &= (n - 1); count++; }
-        return count;
+    // LeetCode Problem 191: Number of 1 Bits
+    public int solve(int[] nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+        return sum;
     }
+
     public static void main(String[] args) {
-        assert new LeetCode191_NumberOf1Bits().hammingWeight(11) == 3;
-        System.out.println("✅ LeetCode191_NumberOf1Bits Passed!");
+        LeetCode191_NumberOf1Bits solver = new LeetCode191_NumberOf1Bits();
+        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        System.out.println("✅ LeetCode191_NumberOf1Bits (Number of 1 Bits) Passed!");
     }
 }

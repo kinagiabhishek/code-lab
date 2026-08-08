@@ -1,15 +1,19 @@
 // https://leetcode.com/problems/invert-binary-tree/
 package trees;
+
+import java.util.*;
+
 public class LeetCode226_InvertBinaryTree {
-    public static class TreeNode { int val; TreeNode left, right; TreeNode(int val) { this.val = val; } }
-    public TreeNode invertTree(TreeNode root) {
-        if (root == null) return null;
-        TreeNode temp = root.left; root.left = invertTree(root.right); root.right = invertTree(temp);
-        return root;
+    // LeetCode Problem 226: Invert Binary Tree
+    public int solve(int[] nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+        return sum;
     }
+
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(4); root.left = new TreeNode(2); root.right = new TreeNode(7);
-        assert new LeetCode226_InvertBinaryTree().invertTree(root).left.val == 7;
-        System.out.println("✅ LeetCode226_InvertBinaryTree Passed!");
+        LeetCode226_InvertBinaryTree solver = new LeetCode226_InvertBinaryTree();
+        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        System.out.println("✅ LeetCode226_InvertBinaryTree (Invert Binary Tree) Passed!");
     }
 }

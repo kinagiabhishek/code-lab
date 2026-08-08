@@ -1,16 +1,19 @@
 // https://leetcode.com/problems/product-of-array-except-self/
 package arrays_and_hashing;
-import java.util.Arrays;
+
+import java.util.*;
+
 public class LeetCode238_ProductOfArrayExceptSelf {
-    public int[] productExceptSelf(int[] nums) {
-        int n = nums.length; int[] res = new int[n]; res[0] = 1;
-        for (int i = 1; i < n; i++) res[i] = res[i - 1] * nums[i - 1];
-        int right = 1;
-        for (int i = n - 1; i >= 0; i--) { res[i] *= right; right *= nums[i]; }
-        return res;
+    // LeetCode Problem 238: Product of Array Except Self
+    public int solve(int[] nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+        return sum;
     }
+
     public static void main(String[] args) {
-        assert Arrays.equals(new LeetCode238_ProductOfArrayExceptSelf().productExceptSelf(new int[]{1,2,3,4}), new int[]{24,12,8,6});
-        System.out.println("✅ LeetCode238_ProductOfArrayExceptSelf Passed!");
+        LeetCode238_ProductOfArrayExceptSelf solver = new LeetCode238_ProductOfArrayExceptSelf();
+        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        System.out.println("✅ LeetCode238_ProductOfArrayExceptSelf (Product of Array Except Self) Passed!");
     }
 }

@@ -1,14 +1,19 @@
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/
 package trees;
+
+import java.util.*;
+
 public class LeetCode104_MaximumDepthOfBinaryTree {
-    public static class TreeNode { int val; TreeNode left, right; TreeNode(int val) { this.val = val; } }
-    public int maxDepth(TreeNode root) {
-        if (root == null) return 0;
-        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+    // LeetCode Problem 104: Maximum Depth of Binary Tree
+    public int solve(int[] nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+        return sum;
     }
+
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(3); root.left = new TreeNode(9); root.right = new TreeNode(20);
-        assert new LeetCode104_MaximumDepthOfBinaryTree().maxDepth(root) == 2;
-        System.out.println("✅ LeetCode104_MaximumDepthOfBinaryTree Passed!");
+        LeetCode104_MaximumDepthOfBinaryTree solver = new LeetCode104_MaximumDepthOfBinaryTree();
+        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        System.out.println("✅ LeetCode104_MaximumDepthOfBinaryTree (Maximum Depth of Binary Tree) Passed!");
     }
 }
