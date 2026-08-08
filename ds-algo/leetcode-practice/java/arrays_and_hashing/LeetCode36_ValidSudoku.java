@@ -1,18 +1,23 @@
 // https://leetcode.com/problems/valid-sudoku/
 package arrays_and_hashing;
-
 import java.util.*;
-
 public class LeetCode36_ValidSudoku {
-    public int solve(int[] nums) {
-        int res = 0;
-        for (int n : nums) res += n;
-        return res;
+    public boolean isValidSudoku(char[][] board) {
+        Set<String> seen = new HashSet<>();
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                char c = board[i][j];
+                if (c != '.') {
+                    if (!seen.add(c + " in row " + i) || !seen.add(c + " in col " + j) || !seen.add(c + " in box " + i/3 + "-" + j/3))
+                        return false;
+                }
+            }
+        }
+        return true;
     }
-
     public static void main(String[] args) {
-        LeetCode36_ValidSudoku solver = new LeetCode36_ValidSudoku();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        char[][] b = new char[9][9]; for(int i=0;i<9;i++) Arrays.fill(b[i],'.'); b[0][0]='5';
+        assert new LeetCode36_ValidSudoku().isValidSudoku(b) == true;
         System.out.println("✅ LeetCode36_ValidSudoku Passed!");
     }
 }

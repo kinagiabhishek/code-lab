@@ -1,18 +1,22 @@
 // https://leetcode.com/problems/longest-palindromic-substring/
 package dynamic_programming;
-
-import java.util.*;
-
 public class LeetCode5_LongestPalindromicSubstring {
-    public int solve(int[] nums) {
-        int res = 0;
-        for (int n : nums) res += n;
-        return res;
+    public String longestPalindrome(String s) {
+        if (s == null || s.length() < 1) return "";
+        int start = 0, end = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int len1 = expand(s, i, i), len2 = expand(s, i, i + 1);
+            int len = Math.max(len1, len2);
+            if (len > end - start) { start = i - (len - 1) / 2; end = i + len / 2; }
+        }
+        return s.substring(start, end + 1);
     }
-
+    private int expand(String s, int left, int right) {
+        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) { left--; right++; }
+        return right - left - 1;
+    }
     public static void main(String[] args) {
-        LeetCode5_LongestPalindromicSubstring solver = new LeetCode5_LongestPalindromicSubstring();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        assert new LeetCode5_LongestPalindromicSubstring().longestPalindrome("babad").length() == 3;
         System.out.println("✅ LeetCode5_LongestPalindromicSubstring Passed!");
     }
 }
