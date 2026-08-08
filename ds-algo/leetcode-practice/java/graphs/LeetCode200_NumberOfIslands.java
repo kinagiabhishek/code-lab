@@ -1,11 +1,11 @@
-package medium;
+package graphs;
 
 /**
  * LeetCode 200: Number of Islands
  * Link: https://leetcode.com/problems/number-of-islands/
  * Difficulty: Medium
  */
-public class NumberOfIslands {
+public class LeetCode200_NumberOfIslands {
     public int numIslands(char[][] grid) {
         if (grid == null || grid.length == 0) return 0;
         int count = 0;
@@ -32,7 +32,7 @@ public class NumberOfIslands {
     }
 
     public static void main(String[] args) {
-        NumberOfIslands solver = new NumberOfIslands();
+        LeetCode200_NumberOfIslands solver = new LeetCode200_NumberOfIslands();
         char[][] grid = {
             {'1','1','1','1','0'},
             {'1','1','0','1','0'},

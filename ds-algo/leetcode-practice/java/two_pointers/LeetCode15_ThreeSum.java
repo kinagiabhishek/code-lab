@@ -1,4 +1,4 @@
-package medium;
+package two_pointers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.List;
  * Link: https://leetcode.com/problems/3sum/
  * Difficulty: Medium
  */
-public class ThreeSum {
+public class LeetCode15_ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();
@@ -35,7 +35,7 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-        ThreeSum solver = new ThreeSum();
+        LeetCode15_ThreeSum solver = new LeetCode15_ThreeSum();
         List<List<Integer>> result = solver.threeSum(new int[] {-1, 0, 1, 2, -1, -4});
         assert result.size() == 2;
         System.out.println("✅ ThreeSum Test Passed!");

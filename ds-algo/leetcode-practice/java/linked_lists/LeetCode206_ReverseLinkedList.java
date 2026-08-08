@@ -1,11 +1,11 @@
-package easy;
+package linked_lists;
 
 /**
  * LeetCode 206: Reverse Linked List
  * Link: https://leetcode.com/problems/reverse-linked-list/
  * Difficulty: Easy
  */
-public class ReverseLinkedList {
+public class LeetCode206_ReverseLinkedList {
     public static class ListNode {
         int val;
         ListNode next;
@@ -25,7 +25,7 @@ public class ReverseLinkedList {
     }
 
     public static void main(String[] args) {
-        ReverseLinkedList solver = new ReverseLinkedList();
+        LeetCode206_ReverseLinkedList solver = new LeetCode206_ReverseLinkedList();
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);

@@ -1,4 +1,4 @@
-package hard;
+package heap_and_priority_queue;
 
 import java.util.PriorityQueue;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.Collections;
  * Link: https://leetcode.com/problems/find-median-from-data-stream/
  * Difficulty: Hard
  */
-public class FindMedianDataStream {
+public class LeetCode295_FindMedianDataStream {
     public static class MedianFinder {
         private PriorityQueue<Integer> maxHeap; // stores smaller half
         private PriorityQueue<Integer> minHeap; // stores larger half

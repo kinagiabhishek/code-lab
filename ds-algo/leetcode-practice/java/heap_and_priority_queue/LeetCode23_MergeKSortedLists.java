@@ -1,4 +1,4 @@
-package hard;
+package heap_and_priority_queue;
 
 import java.util.PriorityQueue;
 
@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
  * Link: https://leetcode.com/problems/merge-k-sorted-lists/
  * Difficulty: Hard
  */
-public class MergeKSortedLists {
+public class LeetCode23_MergeKSortedLists {
     public static class ListNode {
         int val;
         ListNode next;
@@ -32,7 +32,7 @@ public class MergeKSortedLists {
     }
 
     public static void main(String[] args) {
-        MergeKSortedLists solver = new MergeKSortedLists();
+        LeetCode23_MergeKSortedLists solver = new LeetCode23_MergeKSortedLists();
         ListNode l1 = new ListNode(1); l1.next = new ListNode(4); l1.next.next = new ListNode(5);
         ListNode l2 = new ListNode(1); l2.next = new ListNode(3); l2.next.next = new ListNode(4);
         ListNode l3 = new ListNode(2); l3.next = new ListNode(6);
