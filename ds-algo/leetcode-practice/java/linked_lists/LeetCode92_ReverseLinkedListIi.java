@@ -3,17 +3,18 @@ package linked_lists;
 
 import java.util.*;
 
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 public class LeetCode92_ReverseLinkedListIi {
-    // LeetCode Problem 92: Reverse Linked List II
-    public int solve(int[] nums) {
-        int sum = 0;
-        for (int n : nums) sum += n;
-        return sum;
-    }
-
-    public static void main(String[] args) {
-        LeetCode92_ReverseLinkedListIi solver = new LeetCode92_ReverseLinkedListIi();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
-        System.out.println("✅ LeetCode92_ReverseLinkedListIi (Reverse Linked List II) Passed!");
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        
     }
 }

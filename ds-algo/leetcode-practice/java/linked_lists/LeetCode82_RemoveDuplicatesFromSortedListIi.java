@@ -3,17 +3,18 @@ package linked_lists;
 
 import java.util.*;
 
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 public class LeetCode82_RemoveDuplicatesFromSortedListIi {
-    // LeetCode Problem 82: Remove Duplicates from Sorted List II
-    public int solve(int[] nums) {
-        int sum = 0;
-        for (int n : nums) sum += n;
-        return sum;
-    }
-
-    public static void main(String[] args) {
-        LeetCode82_RemoveDuplicatesFromSortedListIi solver = new LeetCode82_RemoveDuplicatesFromSortedListIi();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
-        System.out.println("✅ LeetCode82_RemoveDuplicatesFromSortedListIi (Remove Duplicates from Sorted List II) Passed!");
+    public ListNode deleteDuplicates(ListNode head) {
+        
     }
 }

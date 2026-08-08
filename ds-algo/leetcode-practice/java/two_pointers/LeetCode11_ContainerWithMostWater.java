@@ -4,16 +4,12 @@ package two_pointers;
 import java.util.*;
 
 public class LeetCode11_ContainerWithMostWater {
-    // LeetCode Problem 11: Container With Most Water
-    public int solve(int[] nums) {
-        int sum = 0;
-        for (int n : nums) sum += n;
-        return sum;
-    }
-
-    public static void main(String[] args) {
-        LeetCode11_ContainerWithMostWater solver = new LeetCode11_ContainerWithMostWater();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
-        System.out.println("✅ LeetCode11_ContainerWithMostWater (Container With Most Water) Passed!");
+    public int maxArea(int[] height) {
+        int l = 0, r = height.length - 1, max = 0;
+        while (l < r) {
+            int h = Math.min(height[l], height[r]); max = Math.max(max, h * (r - l));
+            if (height[l] < height[r]) l++; else r--;
+        }
+        return max;
     }
 }

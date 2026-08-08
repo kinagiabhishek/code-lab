@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
 package sliding_window;
+
 import java.util.*;
+
 public class LeetCode3_LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         Set<Character> set = new HashSet<>(); int l = 0, max = 0;
@@ -9,9 +11,5 @@ public class LeetCode3_LongestSubstringWithoutRepeatingCharacters {
             set.add(s.charAt(r)); max = Math.max(max, r - l + 1);
         }
         return max;
-    }
-    public static void main(String[] args) {
-        assert new LeetCode3_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("abcabcbb") == 3;
-        System.out.println("✅ LeetCode3_LongestSubstringWithoutRepeatingCharacters Passed!");
     }
 }

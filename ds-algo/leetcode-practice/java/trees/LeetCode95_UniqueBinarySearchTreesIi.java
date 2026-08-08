@@ -3,17 +3,23 @@ package trees;
 
 import java.util.*;
 
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 public class LeetCode95_UniqueBinarySearchTreesIi {
-    // LeetCode Problem 95: Unique Binary Search Trees II
-    public int solve(int[] nums) {
-        int sum = 0;
-        for (int n : nums) sum += n;
-        return sum;
-    }
-
-    public static void main(String[] args) {
-        LeetCode95_UniqueBinarySearchTreesIi solver = new LeetCode95_UniqueBinarySearchTreesIi();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
-        System.out.println("✅ LeetCode95_UniqueBinarySearchTreesIi (Unique Binary Search Trees II) Passed!");
+    public List<TreeNode> generateTrees(int n) {
+        
     }
 }

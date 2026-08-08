@@ -4,16 +4,12 @@ package trees;
 import java.util.*;
 
 public class LeetCode3_LongestSubstringWithoutRepeatingCharacters {
-    // LeetCode Problem 3: Longest Substring Without Repeating Characters
-    public int solve(int[] nums) {
-        int sum = 0;
-        for (int n : nums) sum += n;
-        return sum;
-    }
-
-    public static void main(String[] args) {
-        LeetCode3_LongestSubstringWithoutRepeatingCharacters solver = new LeetCode3_LongestSubstringWithoutRepeatingCharacters();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
-        System.out.println("✅ LeetCode3_LongestSubstringWithoutRepeatingCharacters (Longest Substring Without Repeating Characters) Passed!");
+    public int lengthOfLongestSubstring(String s) {
+        Set<Character> set = new HashSet<>(); int l = 0, max = 0;
+        for (int r = 0; r < s.length(); r++) {
+            while (set.contains(s.charAt(r))) { set.remove(s.charAt(l)); l++; }
+            set.add(s.charAt(r)); max = Math.max(max, r - l + 1);
+        }
+        return max;
     }
 }

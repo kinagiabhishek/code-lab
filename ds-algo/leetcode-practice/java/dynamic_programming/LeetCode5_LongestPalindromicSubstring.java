@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/longest-palindromic-substring/
 package dynamic_programming;
+
+import java.util.*;
+
 public class LeetCode5_LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";
@@ -14,9 +17,5 @@ public class LeetCode5_LongestPalindromicSubstring {
     private int expand(String s, int left, int right) {
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) { left--; right++; }
         return right - left - 1;
-    }
-    public static void main(String[] args) {
-        assert new LeetCode5_LongestPalindromicSubstring().longestPalindrome("babad").length() == 3;
-        System.out.println("✅ LeetCode5_LongestPalindromicSubstring Passed!");
     }
 }

@@ -4,16 +4,7 @@ package stacks_and_queues;
 import java.util.*;
 
 public class LeetCode32_LongestValidParentheses {
-    // LeetCode Problem 32: Longest Valid Parentheses
-    public int solve(int[] nums) {
-        int sum = 0;
-        for (int n : nums) sum += n;
-        return sum;
-    }
-
-    public static void main(String[] args) {
-        LeetCode32_LongestValidParentheses solver = new LeetCode32_LongestValidParentheses();
-        assert solver.solve(new int[]{1, 2, 3}) == 6;
-        System.out.println("✅ LeetCode32_LongestValidParentheses (Longest Valid Parentheses) Passed!");
+    public int longestValidParentheses(String s) {
+        
     }
 }
