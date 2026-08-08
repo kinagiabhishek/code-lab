@@ -1,8 +1,10 @@
 // https://leetcode.com/problems/encode-and-decode-strings/
 package arrays_and_hashing;
+
 import java.util.*;
+
 public class EncodeAndDecodeStrings {
-    public String encode(List<String> strs) {
+public String encode(List<String> strs) {
         StringBuilder sb = new StringBuilder();
         for (String s : strs) sb.append(s.length()).append('#').append(s);
         return sb.toString();
@@ -19,9 +21,9 @@ public class EncodeAndDecodeStrings {
         return res;
     }
     public static void main(String[] args) {
-        LeetCode271_EncodeAndDecodeStrings codec = new EncodeAndDecodeStrings();
+        EncodeAndDecodeStrings codec = new EncodeAndDecodeStrings();
         List<String> input = Arrays.asList("lint","code","love","you");
         assert codec.decode(codec.encode(input)).equals(input);
-        System.out.println("✅ LeetCode271_EncodeAndDecodeStrings Passed!");
+        System.out.println("✅ EncodeAndDecodeStrings Passed!");
     }
 }

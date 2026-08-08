@@ -4,8 +4,7 @@ package math;
 import java.util.*;
 
 public class AddStrings {
-    // LeetCode Problem 415: Add Strings
-    public String addStrings(String num1, String num2) {
+public String addStrings(String num1, String num2) {
         StringBuilder sb = new StringBuilder();
         int i = num1.length() - 1, j = num2.length() - 1, carry = 0;
         while (i >= 0 || j >= 0 || carry != 0) {
@@ -18,7 +17,6 @@ public class AddStrings {
         }
         return sb.reverse().toString();
     }
-
     public static void main(String[] args) {
         AddStrings solver = new AddStrings();
         assert solver.addStrings("11", "123").equals("134");

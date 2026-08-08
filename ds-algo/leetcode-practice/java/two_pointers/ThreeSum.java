@@ -1,8 +1,10 @@
 // https://leetcode.com/problems/3sum/
 package two_pointers;
+
 import java.util.*;
+
 public class ThreeSum {
-    public List<List<Integer>> threeSum(int[] nums) {
+public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums); List<List<Integer>> res = new ArrayList<>();
         for (int i = 0; i < nums.length - 2; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) continue;
@@ -20,7 +22,8 @@ public class ThreeSum {
         return res;
     }
     public static void main(String[] args) {
-        assert new ThreeSum().threeSum(new int[]{-1,0,1,2,-1,-4}).size() == 2;
-        System.out.println("✅ LeetCode15_ThreeSum Passed!");
+        ThreeSum solver = new ThreeSum();
+        assert solver.threeSum(new int[]{-1,0,1,2,-1,-4}).size() == 2;
+        System.out.println("✅ ThreeSum Passed!");
     }
 }

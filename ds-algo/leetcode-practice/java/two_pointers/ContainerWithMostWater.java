@@ -4,12 +4,17 @@ package two_pointers;
 import java.util.*;
 
 public class ContainerWithMostWater {
-    public int maxArea(int[] height) {
+public int maxArea(int[] height) {
         int l = 0, r = height.length - 1, max = 0;
         while (l < r) {
             int h = Math.min(height[l], height[r]); max = Math.max(max, h * (r - l));
             if (height[l] < height[r]) l++; else r--;
         }
         return max;
+    }
+    public static void main(String[] args) {
+        ContainerWithMostWater solver = new ContainerWithMostWater();
+        assert solver.maxArea(new int[]{1,8,6,2,5,4,8,3,7}) == 49;
+        System.out.println("✅ ContainerWithMostWater Passed!");
     }
 }

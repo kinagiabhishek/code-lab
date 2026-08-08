@@ -1,7 +1,10 @@
 // https://leetcode.com/problems/longest-repeating-character-replacement/
 package sliding_window;
+
+import java.util.*;
+
 public class LongestRepeatingCharacterReplacement {
-    public int characterReplacement(String s, int k) {
+public int characterReplacement(String s, int k) {
         int[] count = new int[26]; int l = 0, maxCount = 0, maxLen = 0;
         for (int r = 0; r < s.length(); r++) {
             maxCount = Math.max(maxCount, ++count[s.charAt(r) - 'A']);
@@ -11,7 +14,8 @@ public class LongestRepeatingCharacterReplacement {
         return maxLen;
     }
     public static void main(String[] args) {
-        assert new LongestRepeatingCharacterReplacement().characterReplacement("ABAB", 2) == 4;
-        System.out.println("✅ LeetCode424_LongestRepeatingCharacterReplacement Passed!");
+        LongestRepeatingCharacterReplacement solver = new LongestRepeatingCharacterReplacement();
+        assert solver.characterReplacement("ABAB", 2) == 4;
+        System.out.println("✅ LongestRepeatingCharacterReplacement Passed!");
     }
 }

@@ -4,8 +4,7 @@ package sliding_window;
 import java.util.*;
 
 public class MinimumWindowSubstring {
-
-    public String minWindow(String s, String t) {
+public String minWindow(String s, String t) {
         if (s.length() < t.length()) return "";
         Map<Character, Integer> map = new HashMap<>();
         for (char c : t.toCharArray()) map.put(c, map.getOrDefault(c, 0) + 1);
@@ -31,6 +30,6 @@ public class MinimumWindowSubstring {
     public static void main(String[] args) {
         MinimumWindowSubstring solver = new MinimumWindowSubstring();
         assert solver.minWindow("ADOBECODEBANC", "ABC").equals("BANC");
-        System.out.println("✅ LeetCode76_MinimumWindowSubstring Passed!");
+        System.out.println("✅ MinimumWindowSubstring Passed!");
     }
 }

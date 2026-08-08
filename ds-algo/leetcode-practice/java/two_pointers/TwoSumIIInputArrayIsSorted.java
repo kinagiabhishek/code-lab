@@ -1,8 +1,10 @@
 // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 package two_pointers;
-import java.util.Arrays;
+
+import java.util.*;
+
 public class TwoSumIIInputArrayIsSorted {
-    public int[] twoSum(int[] numbers, int target) {
+public int[] twoSum(int[] numbers, int target) {
         int l = 0, r = numbers.length - 1;
         while (l < r) {
             int sum = numbers[l] + numbers[r];
@@ -12,7 +14,8 @@ public class TwoSumIIInputArrayIsSorted {
         return new int[]{};
     }
     public static void main(String[] args) {
-        assert Arrays.equals(new TwoSumIIInputArrayIsSorted().twoSum(new int[]{2,7,11,15}, 9), new int[]{1,2});
-        System.out.println("✅ LeetCode167_TwoSumIIInputArrayIsSorted Passed!");
+        TwoSumIIInputArrayIsSorted solver = new TwoSumIIInputArrayIsSorted();
+        assert Arrays.equals(solver.twoSum(new int[]{2,7,11,15}, 9), new int[]{1,2});
+        System.out.println("✅ TwoSumIIInputArrayIsSorted Passed!");
     }
 }

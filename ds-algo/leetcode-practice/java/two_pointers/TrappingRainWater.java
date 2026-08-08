@@ -4,8 +4,7 @@ package two_pointers;
 import java.util.*;
 
 public class TrappingRainWater {
-
-    public int trap(int[] height) {
+public int trap(int[] height) {
         int l = 0, r = height.length - 1, leftMax = 0, rightMax = 0, ans = 0;
         while (l < r) {
             if (height[l] < height[r]) {
@@ -21,6 +20,6 @@ public class TrappingRainWater {
     public static void main(String[] args) {
         TrappingRainWater solver = new TrappingRainWater();
         assert solver.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}) == 6;
-        System.out.println("✅ LeetCode42_TrappingRainWater Passed!");
+        System.out.println("✅ TrappingRainWater Passed!");
     }
 }
