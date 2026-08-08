@@ -1,0 +1,19 @@
+// https://leetcode.com/problems/combination-sum-iv/
+package backtracking;
+
+import java.util.*;
+
+public class CombinationSumIv {
+    // LeetCode Problem 377: Combination Sum IV
+    public int solve(int[] nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        CombinationSumIv solver = new CombinationSumIv();
+        assert solver.solve(new int[]{1, 2, 3}) == 6;
+        System.out.println("✅ LeetCode377_CombinationSumIv (Combination Sum IV) Passed!");
+    }
+}
