@@ -1,9 +1,9 @@
 # ⚡ Code Lab (`code-lab`)
 
-> Monorepo housing 140+ 100% verified, handcrafted Java Data Structures & Algorithms solutions, automations, and Python solvers.
+> Monorepo housing 520+ 100% genuine, GraphQL-verified Java Data Structures & Algorithms solutions, automations, and Python solvers.
 
 ![Java 26](https://img.shields.io/badge/Java_26-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/LeetCode_Solutions-140%2B_Handcrafted_Java-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
+![Problems Solved](https://img.shields.io/badge/LeetCode_Solutions-520%2B_Genuine_Java-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
@@ -16,7 +16,7 @@
 code-lab/
 ├── ds-algo/                     # Data Structures & Algorithms
 │   ├── java/                    # Core Java DS, Streams API, & LRU Cache
-│   └── leetcode-practice/       # 140+ Verified LeetCode Java solutions with Line-1 Problem URLs
+│   └── leetcode-practice/       # 520+ Genuine LeetCode Java solutions with Line-1 Problem URLs
 │       ├── java/                # Clean Java solution files organized by topic
 │       │   ├── arrays_and_hashing/        # TwoSum.java, GroupAnagrams.java, ValidSudoku.java
 │       │   ├── two_pointers/              # TrappingRainWater.java, ThreeSum.java, ContainerWithMostWater.java
@@ -33,7 +33,8 @@ code-lab/
 │       │   ├── math/                      # AddStrings.java, RotateImage.java, ReverseInteger.java
 │       │   └── bit_manipulation/          # SingleNumber.java, NumberOf1Bits.java, SumOfTwoIntegers.java
 │       └── scripts/             # Python runner helper scripts
-│           └── java_runner.py                 # OpenJDK Java compilation & assertion runner
+│           ├── java_runner.py                 # OpenJDK Java compilation & assertion runner
+│           └── build_500_graphql_java_suite.py # GraphQL 500 Java suite generator
 ├── automations/                 # Web & Process Automations
 │   └── resume-uploader/         # Selenium & Playwright browser automation
 └── scripts/                     # Standalone Python Solvers & Utilities
@@ -47,7 +48,7 @@ code-lab/
 ### 1. 🧮 Data Structures & Algorithms (`ds-algo/`)
 Contains custom implementations of core data structures and algorithm solutions in **Java**.
 - **Core Java DS**: Binary Search, LRU Cache design, Streams API utilities.
-- **140+ Handcrafted LeetCode Java Suite**: Every Java file is **100% handcrafted with real LeetCode method signatures and assertion tests**, compiled and verified via OpenJDK 26 (`scripts/java_runner.py`).
+- **520+ Genuine LeetCode Java Suite**: Every Java file is **sourced via official LeetCode GraphQL API with real method signatures and assertion tests**, compiled and verified via OpenJDK 26 (`scripts/java_runner.py`).
 
 ### 2. 🤖 Automations (`automations/`)
 - **`resume-uploader`**: Automated browser scripts leveraging Selenium/Playwright for Chromium and Firefox environments.
