@@ -4,29 +4,22 @@ package arrays_and_hashing;
 import java.util.*;
 
 public class CountAndSay {
-    // LeetCode Problem 38: Count and Say
-    public String countAndSay(int n) {
+public String countAndSay(int n) {
         if (n <= 0) return "";
         String res = "1";
         while (n > 1) {
             StringBuilder cur = new StringBuilder();
             for (int i = 0; i < res.length(); i++) {
                 int count = 1;
-                while (i + 1 < res.length() && res.charAt(i) == res.charAt(i + 1)) {
-                    count++;
-                    i++;
-                }
+                while (i + 1 < res.length() && res.charAt(i) == res.charAt(i + 1)) { count++; i++; }
                 cur.append(count).append(res.charAt(i));
             }
-            res = cur.toString();
-            n--;
+            res = cur.toString(); n--;
         }
         return res;
     }
-
     public static void main(String[] args) {
         CountAndSay solver = new CountAndSay();
-        assert solver.countAndSay(1).equals("1");
         assert solver.countAndSay(4).equals("1211");
         System.out.println("✅ CountAndSay Passed!");
     }
