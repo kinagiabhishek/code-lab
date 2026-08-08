@@ -1,0 +1,20 @@
+**Important Commands Used
+
+Initialization and basic software installation on the device
+sudo apt update
+sudo apt install chromium-browser
+sudo apt install -y chromium-chromedriver
+sudo apt install xvfb -y
+
+Initialization of the virtual screen
+Xvfb :99 -screen 0 1920x1080x24 -ac &
+DISPLAY=:99 python3 /home/ubuntu/resume-updater/resume_upload.py
+pkill Xvfb
+
+Cron Job to upload resume at 9 AM IST and store logs
+crontab -e
+30 3 * * * DISPLAY=:99 /usr/bin/python3 /home/ubuntu/resume_updater/resume_upload_test.py >> /home/ubuntu/resume_updater/logs/cron_log.txt 2>> /home/ubuntu/resume_updater/logs/error_log.txt
+crontab -l
+
+ssh -i /path/to/your-key.pem ubuntu@your-ec2-public-ip
+scp -i /path/to/your-key.pem ubuntu@your-ec2-public-ip:/home/ubuntu/resume_updater/debug.png .
