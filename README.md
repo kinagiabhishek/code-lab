@@ -1,9 +1,9 @@
 # ⚡ Code Lab (`code-lab`)
 
-> Monorepo housing 500+ genuine Java Data Structures & Algorithms solutions pulled directly from official LeetCode APIs, automations, and Python solvers.
+> Monorepo housing GraphQL-verified Java Data Structures & Algorithms solutions, automations, and Python solvers.
 
 ![Java 26](https://img.shields.io/badge/Java_26-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/LeetCode_Solutions-500%2B_Genuine_Java-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
+![Problems Solved](https://img.shields.io/badge/LeetCode_Solutions-GraphQL_Verified_Java-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
@@ -16,24 +16,25 @@
 code-lab/
 ├── ds-algo/                     # Data Structures & Algorithms
 │   ├── java/                    # Core Java DS, Streams API, & LRU Cache
-│   └── leetcode-practice/       # 500+ Genuine LeetCode Java solutions with Line-1 Problem URLs
+│   └── leetcode-practice/       # GraphQL-Verified LeetCode Java solutions with Line-1 Problem URLs
 │       ├── java/
-│       │   ├── arrays_and_hashing/        # 160+ Problems
-│       │   ├── two_pointers/              # 15+ Problems
-│       │   ├── sliding_window/            # 10+ Problems
-│       │   ├── stacks_and_queues/         # 25+ Problems
-│       │   ├── binary_search/             # 20+ Problems
-│       │   ├── linked_lists/              # 10+ Problems
-│       │   ├── trees/                     # 60+ Problems
-│       │   ├── graphs/                    # 30+ Problems
-│       │   ├── heap_and_priority_queue/   # 15+ Problems
-│       │   ├── backtracking/              # 20+ Problems
-│       │   ├── dynamic_programming/       # 60+ Problems
-│       │   ├── greedy/                    # 10+ Problems
-│       │   ├── math/                      # 60+ Problems
-│       │   └── bit_manipulation/          # 20+ Problems
-│       ├── scrape_official_leetcode.py    # Official LeetCode API scraper
-│       └── build_genuine_leetcode_suite.py # Genuine solution builder
+│       │   ├── arrays_and_hashing/        # Array, Hash Table & String Problems
+│       │   ├── two_pointers/              # Two Pointers Problems
+│       │   ├── sliding_window/            # Sliding Window Problems
+│       │   ├── stacks_and_queues/         # Stack & Monotonic Queue Problems
+│       │   ├── binary_search/             # Binary Search Problems
+│       │   ├── linked_lists/              # Linked List Problems
+│       │   ├── trees/                     # Binary Tree & BST Problems
+│       │   ├── graphs/                    # Graph & DFS/BFS Problems
+│       │   ├── heap_and_priority_queue/   # Heap & Priority Queue Problems
+│       │   ├── backtracking/              # Backtracking & Combinatorics
+│       │   ├── dynamic_programming/       # Dynamic Programming & DP Memoization
+│       │   ├── greedy/                    # Greedy Choice Problems
+│       │   ├── math/                      # Math & Number Theory Problems
+│       │   └── bit_manipulation/          # Bit Manipulation Problems
+│       ├── fetch_and_build_meticulous_suite.py # GraphQL inspector pipeline
+│       ├── meticulous_solution_generator.py    # Official GraphQL snippet generator
+│       └── populate_meticulous_solutions.py   # Solution & local assertion runner
 ├── automations/                 # Web & Process Automations
 │   └── resume-uploader/         # Selenium & Playwright browser automation
 └── scripts/                     # Standalone Python Solvers & Utilities
@@ -47,7 +48,7 @@ code-lab/
 ### 1. 🧮 Data Structures & Algorithms (`ds-algo/`)
 Contains custom implementations of core data structures and algorithm solutions in **Java**.
 - **Core Java DS**: Binary Search, LRU Cache design, Streams API utilities.
-- **500+ Genuine LeetCode Java Suite**: Every Java file includes the **Direct Official LeetCode Problem URL on Line 1** for instant reference and copy-pasting (`java_runner.py`).
+- **GraphQL-Verified LeetCode Java Suite**: Every Java file is **meticulously inspected via LeetCode's GraphQL API (`https://leetcode.com/graphql`)**, skipping all non-algorithms/non-Java problems, using official Java starter code signatures, and providing verified Line-1 URLs (`java_runner.py`).
 
 ### 2. 🤖 Automations (`automations/`)
 - **`resume-uploader`**: Automated browser scripts leveraging Selenium/Playwright for Chromium and Firefox environments.
