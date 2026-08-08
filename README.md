@@ -1,9 +1,8 @@
 # ⚡ Code Lab (`code-lab`)
 
-> Personal workspace for algorithm implementations, data structures, automation scripts, and utility tools.
+> Personal workspace for Java Data Structures & Algorithms, LeetCode solutions, automation scripts, and utility tools.
 
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Java](https://img.shields.io/badge/Java_26-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
@@ -15,8 +14,8 @@
 ```
 code-lab/
 ├── ds-algo/                     # Data Structures & Algorithms
-│   ├── cpp/                     # C++ DSA Implementations & Templates
-│   └── java/                    # Java Algorithms, Streams API, & LRU Cache
+│   ├── java/                    # Java Algorithms, Streams API, & LRU Cache
+│   └── leetcode-practice/       # LeetCode Java practice suite & test runner
 ├── automations/                 # Web & Process Automations
 │   └── resume-uploader/         # Selenium & Playwright browser automation
 └── scripts/                     # Standalone Python Solvers & Utilities
@@ -28,10 +27,9 @@ code-lab/
 ## 🛠️ Modules Overview
 
 ### 1. 🧮 Data Structures & Algorithms (`ds-algo/`)
-Contains custom implementations of core data structures and competitive programming templates in **C++** and **Java**.
-- **C++ DS**: Arrays, Linked Lists, Stacks, Queues, Binary Trees, Undirected Graphs.
-- **C++ Algos**: Custom sorting algorithm benchmarks, CP templates.
-- **Java Algos**: Binary Search, LRU Cache design, Java 8 Streams API utilities.
+Contains custom implementations of core data structures and algorithm solutions in **Java**.
+- **Java Algos**: Binary Search, LRU Cache design, Streams API utilities.
+- **LeetCode Java Suite**: Verified Java solution files for Easy, Medium, and Hard LeetCode problems (`java_runner.py`).
 
 ### 2. 🤖 Automations (`automations/`)
 - **`resume-uploader`**: Automated browser scripts leveraging Selenium/Playwright for Chromium and Firefox environments to handle automated form submissions and file uploads.
@@ -44,4 +42,5 @@ Contains custom implementations of core data structures and competitive programm
 ## 👤 Author
 
 **Abhishek Kinagi**
+- Director P3 @ Morgan Stanley (IST)
 - GitHub: [@kinagiabhishek](https://github.com/kinagiabhishek)
