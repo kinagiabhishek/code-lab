@@ -1,0 +1,23 @@
+package arrays_and_hashing;
+import java.util.Arrays;
+
+public class LeetCode238_ProductOfArrayExceptSelf {
+    public int[] productExceptSelf(int[] nums) {
+        int n = nums.length;
+        int[] res = new int[n];
+        res[0] = 1;
+        for (int i = 1; i < n; i++) res[i] = res[i - 1] * nums[i - 1];
+        int right = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            res[i] *= right;
+            right *= nums[i];
+        }
+        return res;
+    }
+    public static void main(String[] args) {
+        LeetCode238_ProductOfArrayExceptSelf solver = new LeetCode238_ProductOfArrayExceptSelf();
+        int[] res = solver.productExceptSelf(new int[]{1, 2, 3, 4});
+        assert Arrays.equals(res, new int[]{24, 12, 8, 6});
+        System.out.println("✅ LeetCode238_ProductOfArrayExceptSelf Passed!");
+    }
+}
