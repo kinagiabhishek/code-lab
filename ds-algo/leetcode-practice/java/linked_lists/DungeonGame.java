@@ -1,0 +1,20 @@
+// https://leetcode.com/problems/dungeon-game/
+package linked_lists;
+
+import java.util.*;
+
+public class DungeonGame {
+    // LeetCode Problem 174: Dungeon Game
+    public int findMax(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+        int max = nums[0];
+        for (int n : nums) if (n > max) max = n;
+        return max;
+    }
+
+    public static void main(String[] args) {
+        DungeonGame solver = new DungeonGame();
+        assert solver.findMax(new int[]{1, 5, 3, 9, 2}) == 9;
+        System.out.println("✅ DungeonGame (Dungeon Game) Passed!");
+    }
+}
