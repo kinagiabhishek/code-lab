@@ -30,3 +30,4 @@ dist/
 # Logs & Temporary Files
 *.log
 scratch/
+*.class
