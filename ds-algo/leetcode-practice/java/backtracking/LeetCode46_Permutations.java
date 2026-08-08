@@ -12,9 +12,7 @@ public class LeetCode46_Permutations {
         else {
             for (int i = 0; i < nums.length; i++) {
                 if (temp.contains(nums[i])) continue;
-                temp.add(nums[i]);
-                backtrack(res, temp, nums);
-                temp.remove(temp.size() - 1);
+                temp.add(nums[i]); backtrack(res, temp, nums); temp.remove(temp.size() - 1);
             }
         }
     }

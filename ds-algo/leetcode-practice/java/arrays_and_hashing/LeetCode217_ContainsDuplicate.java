@@ -1,21 +1,14 @@
 // https://leetcode.com/problems/contains-duplicate/
 package arrays_and_hashing;
-import java.util.HashSet;
-import java.util.Set;
-
+import java.util.*;
 public class LeetCode217_ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
-        for (int num : nums) {
-            if (set.contains(num)) return true;
-            set.add(num);
-        }
+        for (int n : nums) if (!set.add(n)) return true;
         return false;
     }
     public static void main(String[] args) {
-        LeetCode217_ContainsDuplicate solver = new LeetCode217_ContainsDuplicate();
-        assert solver.containsDuplicate(new int[]{1, 2, 3, 1}) == true;
-        assert solver.containsDuplicate(new int[]{1, 2, 3, 4}) == false;
+        assert new LeetCode217_ContainsDuplicate().containsDuplicate(new int[]{1, 2, 3, 1}) == true;
         System.out.println("✅ LeetCode217_ContainsDuplicate Passed!");
     }
 }

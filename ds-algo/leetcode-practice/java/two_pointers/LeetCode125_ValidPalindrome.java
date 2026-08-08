@@ -1,6 +1,5 @@
 // https://leetcode.com/problems/valid-palindrome/
 package two_pointers;
-
 public class LeetCode125_ValidPalindrome {
     public boolean isPalindrome(String s) {
         int l = 0, r = s.length() - 1;
@@ -13,8 +12,7 @@ public class LeetCode125_ValidPalindrome {
         return true;
     }
     public static void main(String[] args) {
-        LeetCode125_ValidPalindrome solver = new LeetCode125_ValidPalindrome();
-        assert solver.isPalindrome("A man, a plan, a canal: Panama") == true;
+        assert new LeetCode125_ValidPalindrome().isPalindrome("A man, a plan, a canal: Panama") == true;
         System.out.println("✅ LeetCode125_ValidPalindrome Passed!");
     }
 }

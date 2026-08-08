@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/minimum-window-substring/
 package sliding_window;
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.*;
 public class LeetCode76_MinimumWindowSubstring {
     public String minWindow(String s, String t) {
         if (s.length() < t.length()) return "";
@@ -16,10 +14,7 @@ public class LeetCode76_MinimumWindowSubstring {
                 if (map.get(rightChar) >= 0) matched++;
             }
             while (matched == t.length()) {
-                if (r - l + 1 < minLen) {
-                    minLen = r - l + 1;
-                    subStart = l;
-                }
+                if (r - l + 1 < minLen) { minLen = r - l + 1; subStart = l; }
                 char leftChar = s.charAt(l);
                 if (map.containsKey(leftChar)) {
                     if (map.get(leftChar) == 0) matched--;
@@ -31,8 +26,7 @@ public class LeetCode76_MinimumWindowSubstring {
         return minLen > s.length() ? "" : s.substring(subStart, subStart + minLen);
     }
     public static void main(String[] args) {
-        LeetCode76_MinimumWindowSubstring solver = new LeetCode76_MinimumWindowSubstring();
-        assert solver.minWindow("ADOBECODEBANC", "ABC").equals("BANC");
+        assert new LeetCode76_MinimumWindowSubstring().minWindow("ADOBECODEBANC", "ABC").equals("BANC");
         System.out.println("✅ LeetCode76_MinimumWindowSubstring Passed!");
     }
 }

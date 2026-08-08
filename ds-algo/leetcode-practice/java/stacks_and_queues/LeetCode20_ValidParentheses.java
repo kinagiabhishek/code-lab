@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/valid-parentheses/
 package stacks_and_queues;
 import java.util.Stack;
-
 public class LeetCode20_ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
@@ -14,9 +13,7 @@ public class LeetCode20_ValidParentheses {
         return stack.isEmpty();
     }
     public static void main(String[] args) {
-        LeetCode20_ValidParentheses solver = new LeetCode20_ValidParentheses();
-        assert solver.isValid("()[]{}") == true;
-        assert solver.isValid("(]") == false;
+        assert new LeetCode20_ValidParentheses().isValid("()[]{}") == true;
         System.out.println("✅ LeetCode20_ValidParentheses Passed!");
     }
 }

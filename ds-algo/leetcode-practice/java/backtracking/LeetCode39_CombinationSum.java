@@ -12,9 +12,7 @@ public class LeetCode39_CombinationSum {
         if (remain == 0) res.add(new ArrayList<>(list));
         else {
             for (int i = start; i < nums.length; i++) {
-                list.add(nums[i]);
-                backtrack(res, list, nums, remain - nums[i], i);
-                list.remove(list.size() - 1);
+                list.add(nums[i]); backtrack(res, list, nums, remain - nums[i], i); list.remove(list.size() - 1);
             }
         }
     }

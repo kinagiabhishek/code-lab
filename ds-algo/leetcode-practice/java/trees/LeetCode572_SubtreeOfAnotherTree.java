@@ -8,15 +8,13 @@ public class LeetCode572_SubtreeOfAnotherTree {
         return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
     }
     private boolean isSame(TreeNode s, TreeNode t) {
-        if (s == null && t == null) return true;
-        if (s == null || t == null) return false;
+        if (s == null && t == null) return true; if (s == null || t == null) return false;
         if (s.val != t.val) return false;
         return isSame(s.left, t.left) && isSame(s.right, t.right);
     }
     public static void main(String[] args) {
         TreeNode root = new TreeNode(3); root.left = new TreeNode(4); root.right = new TreeNode(5);
-        TreeNode sub = new TreeNode(4);
-        assert new LeetCode572_SubtreeOfAnotherTree().isSubtree(root, sub) == true;
+        assert new LeetCode572_SubtreeOfAnotherTree().isSubtree(root, new TreeNode(4)) == true;
         System.out.println("✅ LeetCode572_SubtreeOfAnotherTree Passed!");
     }
 }
