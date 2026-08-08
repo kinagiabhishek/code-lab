@@ -7,8 +7,7 @@ public class LeetCode76_MinimumWindowSubstring {
         if (s.length() < t.length()) return "";
         Map<Character, Integer> map = new HashMap<>();
         for (char c : t.toCharArray()) map.put(c, map.getOrDefault(c, 0) + 1);
-        int matched = 0, minLen = s.length() + 1, subStart = 0;
-        int l = 0;
+        int matched = 0, minLen = s.length() + 1, subStart = 0, l = 0;
         for (int r = 0; r < s.length(); r++) {
             char rightChar = s.charAt(r);
             if (map.containsKey(rightChar)) {

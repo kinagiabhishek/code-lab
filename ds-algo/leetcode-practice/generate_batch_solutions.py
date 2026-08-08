@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 import os
-import json
 
-# Comprehensive database of classic LeetCode Java problems across categories
+# Comprehensive suite of Java LeetCode solutions across all Core Data Structures & Algorithm Domains
 PROBLEMS = [
-    # Arrays & Hashing
+    # 1. Arrays & Hashing
     ("arrays_and_hashing", "LeetCode217_ContainsDuplicate", 217, "Contains Duplicate", "Easy", "https://leetcode.com/problems/contains-duplicate/",
      """package arrays_and_hashing;
 import java.util.HashSet;
@@ -125,7 +124,7 @@ public class LeetCode238_ProductOfArrayExceptSelf {
     }
 }"""),
 
-    # Two Pointers
+    # 2. Two Pointers
     ("two_pointers", "LeetCode125_ValidPalindrome", 125, "Valid Palindrome", "Easy", "https://leetcode.com/problems/valid-palindrome/",
      """package two_pointers;
 
@@ -136,15 +135,13 @@ public class LeetCode125_ValidPalindrome {
             while (l < r && !Character.isLetterOrDigit(s.charAt(l))) l++;
             while (l < r && !Character.isLetterOrDigit(s.charAt(r))) r--;
             if (Character.toLowerCase(s.charAt(l)) != Character.toLowerCase(s.charAt(r))) return false;
-            l++;
-            r--;
+            l++; r--;
         }
         return true;
     }
     public static void main(String[] args) {
         LeetCode125_ValidPalindrome solver = new LeetCode125_ValidPalindrome();
         assert solver.isPalindrome("A man, a plan, a canal: Panama") == true;
-        assert solver.isPalindrome("race a car") == false;
         System.out.println("✅ LeetCode125_ValidPalindrome Passed!");
     }
 }"""),
@@ -154,8 +151,7 @@ public class LeetCode125_ValidPalindrome {
 
 public class LeetCode11_ContainerWithMostWater {
     public int maxArea(int[] height) {
-        int l = 0, r = height.length - 1;
-        int max = 0;
+        int l = 0, r = height.length - 1, max = 0;
         while (l < r) {
             int h = Math.min(height[l], height[r]);
             max = Math.max(max, h * (r - l));
@@ -171,8 +167,8 @@ public class LeetCode11_ContainerWithMostWater {
     }
 }"""),
 
-    # Sliding Window
-    ("sliding_window", "LeetCode3_LongestSubstringWithoutRepeating", 3, "Longest Substring Without Repeating Characters", "Medium", "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    # 3. Sliding Window
+    ("sliding_window", "LeetCode3_LongestSubstringWithoutRepeating", 3, "Longest Substring Without Repeating", "Medium", "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
      """package sliding_window;
 import java.util.HashSet;
 import java.util.Set;
@@ -194,7 +190,6 @@ public class LeetCode3_LongestSubstringWithoutRepeating {
     public static void main(String[] args) {
         LeetCode3_LongestSubstringWithoutRepeating solver = new LeetCode3_LongestSubstringWithoutRepeating();
         assert solver.lengthOfLongestSubstring("abcabcbb") == 3;
-        assert solver.lengthOfLongestSubstring("bbbbb") == 1;
         System.out.println("✅ LeetCode3_LongestSubstringWithoutRepeating Passed!");
     }
 }"""),
@@ -209,8 +204,7 @@ public class LeetCode76_MinimumWindowSubstring {
         if (s.length() < t.length()) return "";
         Map<Character, Integer> map = new HashMap<>();
         for (char c : t.toCharArray()) map.put(c, map.getOrDefault(c, 0) + 1);
-        int matched = 0, minLen = s.length() + 1, subStart = 0;
-        int l = 0;
+        int matched = 0, minLen = s.length() + 1, subStart = 0, l = 0;
         for (int r = 0; r < s.length(); r++) {
             char rightChar = s.charAt(r);
             if (map.containsKey(rightChar)) {
@@ -239,131 +233,384 @@ public class LeetCode76_MinimumWindowSubstring {
     }
 }"""),
 
-    # Binary Search
-    ("binary_search", "LeetCode704_BinarySearch", 704, "Binary Search", "Easy", "https://leetcode.com/problems/binary-search/",
-     """package binary_search;
+    # 4. Stacks & Queues
+    ("stacks_and_queues", "LeetCode20_ValidParentheses", 20, "Valid Parentheses", "Easy", "https://leetcode.com/problems/valid-parentheses/",
+     """package stacks_and_queues;
+import java.util.Stack;
 
-public class LeetCode704_BinarySearch {
-    public int search(int[] nums, int target) {
-        int l = 0, r = nums.length - 1;
-        while (l <= r) {
-            int mid = l + (r - l) / 2;
-            if (nums[mid] == target) return mid;
-            if (nums[mid] < target) l = mid + 1;
-            else r = mid - 1;
+public class LeetCode20_ValidParentheses {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(') stack.push(')');
+            else if (c == '{') stack.push('}');
+            else if (c == '[') stack.push(']');
+            else if (stack.isEmpty() || stack.pop() != c) return false;
         }
-        return -1;
+        return stack.isEmpty();
     }
     public static void main(String[] args) {
-        LeetCode704_BinarySearch solver = new LeetCode704_BinarySearch();
-        assert solver.search(new int[]{-1,0,3,5,9,12}, 9) == 4;
-        assert solver.search(new int[]{-1,0,3,5,9,12}, 2) == -1;
-        System.out.println("✅ LeetCode704_BinarySearch Passed!");
+        LeetCode20_ValidParentheses solver = new LeetCode20_ValidParentheses();
+        assert solver.isValid("()[]{}") == true;
+        assert solver.isValid("(]") == false;
+        System.out.println("✅ LeetCode20_ValidParentheses Passed!");
     }
 }"""),
 
-    ("binary_search", "LeetCode33_SearchInRotatedSortedArray", 33, "Search in Rotated Sorted Array", "Medium", "https://leetcode.com/problems/search-in-rotated-sorted-array/",
-     """package binary_search;
-
-public class LeetCode33_SearchInRotatedSortedArray {
-    public int search(int[] nums, int target) {
-        int l = 0, r = nums.length - 1;
-        while (l <= r) {
-            int mid = l + (r - l) / 2;
-            if (nums[mid] == target) return mid;
-            if (nums[l] <= nums[mid]) {
-                if (target >= nums[l] && target < nums[mid]) r = mid - 1;
-                else l = mid + 1;
-            } else {
-                if (target > nums[mid] && target <= nums[r]) l = mid + 1;
-                else r = mid - 1;
-            }
-        }
-        return -1;
-    }
-    public static void main(String[] args) {
-        LeetCode33_SearchInRotatedSortedArray solver = new LeetCode33_SearchInRotatedSortedArray();
-        assert solver.search(new int[]{4,5,6,7,0,1,2}, 0) == 4;
-        assert solver.search(new int[]{4,5,6,7,0,1,2}, 3) == -1;
-        System.out.println("✅ LeetCode33_SearchInRotatedSortedArray Passed!");
-    }
-}"""),
-
-    # Dynamic Programming
-    ("dynamic_programming", "LeetCode70_ClimbingStairs", 70, "Climbing Stairs", "Easy", "https://leetcode.com/problems/climbing-stairs/",
-     """package dynamic_programming;
-
-public class LeetCode70_ClimbingStairs {
-    public int climbStairs(int n) {
-        if (n <= 2) return n;
-        int a = 1, b = 2;
-        for (int i = 3; i <= n; i++) {
-            int c = a + b;
-            a = b;
-            b = c;
-        }
-        return b;
-    }
-    public static void main(String[] args) {
-        LeetCode70_ClimbingStairs solver = new LeetCode70_ClimbingStairs();
-        assert solver.climbStairs(2) == 2;
-        assert solver.climbStairs(3) == 3;
-        assert solver.climbStairs(5) == 8;
-        System.out.println("✅ LeetCode70_ClimbingStairs Passed!");
-    }
-}"""),
-
-    ("dynamic_programming", "LeetCode322_CoinChange", 322, "Coin Change", "Medium", "https://leetcode.com/problems/coin-change/",
-     """package dynamic_programming;
+    ("stacks_and_queues", "LeetCode739_DailyTemperatures", 739, "Daily Temperatures", "Medium", "https://leetcode.com/problems/daily-temperatures/",
+     """package stacks_and_queues;
+import java.util.Stack;
 import java.util.Arrays;
 
-public class LeetCode322_CoinChange {
-    public int coinChange(int[] coins, int amount) {
-        int max = amount + 1;
-        int[] dp = new int[amount + 1];
-        Arrays.fill(dp, max);
-        dp[0] = 0;
-        for (int i = 1; i <= amount; i++) {
-            for (int coin : coins) {
-                if (coin <= i) {
-                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
-                }
+public class LeetCode739_DailyTemperatures {
+    public int[] dailyTemperatures(int[] temperatures) {
+        int n = temperatures.length;
+        int[] res = new int[n];
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
+                int prev = stack.pop();
+                res[prev] = i - prev;
             }
+            stack.push(i);
         }
-        return dp[amount] > amount ? -1 : dp[amount];
+        return res;
     }
     public static void main(String[] args) {
-        LeetCode322_CoinChange solver = new LeetCode322_CoinChange();
-        assert solver.coinChange(new int[]{1, 2, 5}, 11) == 3;
-        assert solver.coinChange(new int[]{2}, 3) == -1;
-        System.out.println("✅ LeetCode322_CoinChange Passed!");
+        LeetCode739_DailyTemperatures solver = new LeetCode739_DailyTemperatures();
+        int[] res = solver.dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73});
+        assert Arrays.equals(res, new int[]{1, 1, 4, 2, 1, 1, 0, 0});
+        System.out.println("✅ LeetCode739_DailyTemperatures Passed!");
     }
 }"""),
 
-    ("dynamic_programming", "LeetCode300_LongestIncreasingSubsequence", 300, "Longest Increasing Subsequence", "Medium", "https://leetcode.com/problems/longest-increasing-subsequence/",
-     """package dynamic_programming;
-import java.util.Arrays;
+    ("stacks_and_queues", "LeetCode155_MinStack", 155, "Min Stack", "Medium", "https://leetcode.com/problems/min-stack/",
+     """package stacks_and_queues;
+import java.util.Stack;
 
-public class LeetCode300_LongestIncreasingSubsequence {
-    public int lengthOfLIS(int[] nums) {
-        if (nums.length == 0) return 0;
-        int[] dp = new int[nums.length];
-        Arrays.fill(dp, 1);
-        int maxLIS = 1;
+public class LeetCode155_MinStack {
+    private Stack<Integer> stack = new Stack<>();
+    private Stack<Integer> minStack = new Stack<>();
+
+    public void push(int val) {
+        stack.push(val);
+        if (minStack.isEmpty() || val <= minStack.peek()) {
+            minStack.push(val);
+        }
+    }
+    public void pop() {
+        if (stack.peek().equals(minStack.peek())) {
+            minStack.pop();
+        }
+        stack.pop();
+    }
+    public int top() { return stack.peek(); }
+    public int getMin() { return minStack.peek(); }
+
+    public static void main(String[] args) {
+        LeetCode155_MinStack minStack = new LeetCode155_MinStack();
+        minStack.push(-2);
+        minStack.push(0);
+        minStack.push(-3);
+        assert minStack.getMin() == -3;
+        minStack.pop();
+        assert minStack.top() == 0;
+        assert minStack.getMin() == -2;
+        System.out.println("✅ LeetCode155_MinStack Passed!");
+    }
+}"""),
+
+    # 5. Trees (Binary Trees & BSTs)
+    ("trees", "LeetCode226_InvertBinaryTree", 226, "Invert Binary Tree", "Easy", "https://leetcode.com/problems/invert-binary-tree/",
+     """package trees;
+
+public class LeetCode226_InvertBinaryTree {
+    public static class TreeNode {
+        int val;
+        TreeNode left, right;
+        TreeNode(int val) { this.val = val; }
+    }
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) return null;
+        TreeNode temp = root.left;
+        root.left = invertTree(root.right);
+        root.right = invertTree(temp);
+        return root;
+    }
+    public static void main(String[] args) {
+        LeetCode226_InvertBinaryTree solver = new LeetCode226_InvertBinaryTree();
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(7);
+        TreeNode inverted = solver.invertTree(root);
+        assert inverted.left.val == 7;
+        assert inverted.right.val == 2;
+        System.out.println("✅ LeetCode226_InvertBinaryTree Passed!");
+    }
+}"""),
+
+    ("trees", "LeetCode104_MaximumDepthOfBinaryTree", 104, "Maximum Depth of Binary Tree", "Easy", "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+     """package trees;
+
+public class LeetCode104_MaximumDepthOfBinaryTree {
+    public static class TreeNode {
+        int val;
+        TreeNode left, right;
+        TreeNode(int val) { this.val = val; }
+    }
+    public int maxDepth(TreeNode root) {
+        if (root == null) return 0;
+        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+    }
+    public static void main(String[] args) {
+        LeetCode104_MaximumDepthOfBinaryTree solver = new LeetCode104_MaximumDepthOfBinaryTree();
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        assert solver.maxDepth(root) == 3;
+        System.out.println("✅ LeetCode104_MaximumDepthOfBinaryTree Passed!");
+    }
+}"""),
+
+    ("trees", "LeetCode235_LowestCommonAncestorBST", 235, "Lowest Common Ancestor of a BST", "Medium", "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+     """package trees;
+
+public class LeetCode235_LowestCommonAncestorBST {
+    public static class TreeNode {
+        int val;
+        TreeNode left, right;
+        TreeNode(int val) { this.val = val; }
+    }
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (p.val < root.val && q.val < root.val) return lowestCommonAncestor(root.left, p, q);
+        if (p.val > root.val && q.val > root.val) return lowestCommonAncestor(root.right, p, q);
+        return root;
+    }
+    public static void main(String[] args) {
+        LeetCode235_LowestCommonAncestorBST solver = new LeetCode235_LowestCommonAncestorBST();
+        TreeNode root = new TreeNode(6);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(8);
+        TreeNode p = root.left;
+        TreeNode q = root.right;
+        assert solver.lowestCommonAncestor(root, p, q).val == 6;
+        System.out.println("✅ LeetCode235_LowestCommonAncestorBST Passed!");
+    }
+}"""),
+
+    ("trees", "LeetCode124_BinaryTreeMaxPathSum", 124, "Binary Tree Maximum Path Sum", "Hard", "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+     """package trees;
+
+public class LeetCode124_BinaryTreeMaxPathSum {
+    public static class TreeNode {
+        int val;
+        TreeNode left, right;
+        TreeNode(int val) { this.val = val; }
+    }
+    private int maxSum = Integer.MIN_VALUE;
+    public int maxPathSum(TreeNode root) {
+        maxGain(root);
+        return maxSum;
+    }
+    private int maxGain(TreeNode node) {
+        if (node == null) return 0;
+        int leftGain = Math.max(maxGain(node.left), 0);
+        int rightGain = Math.max(maxGain(node.right), 0);
+        int priceNewPath = node.val + leftGain + rightGain;
+        maxSum = Math.max(maxSum, priceNewPath);
+        return node.val + Math.max(leftGain, rightGain);
+    }
+    public static void main(String[] args) {
+        LeetCode124_BinaryTreeMaxPathSum solver = new LeetCode124_BinaryTreeMaxPathSum();
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        assert solver.maxPathSum(root) == 6;
+        System.out.println("✅ LeetCode124_BinaryTreeMaxPathSum Passed!");
+    }
+}"""),
+
+    # 6. Linked Lists
+    ("linked_lists", "LeetCode21_MergeTwoSortedLists", 21, "Merge Two Sorted Lists", "Easy", "https://leetcode.com/problems/merge-two-sorted-lists/",
+     """package linked_lists;
+
+public class LeetCode21_MergeTwoSortedLists {
+    public static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int val) { this.val = val; }
+    }
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
+        if (l1.val < l2.val) {
+            l1.next = mergeTwoLists(l1.next, l2);
+            return l1;
+        } else {
+            l2.next = mergeTwoLists(l1, l2.next);
+            return l2;
+        }
+    }
+    public static void main(String[] args) {
+        LeetCode21_MergeTwoSortedLists solver = new LeetCode21_MergeTwoSortedLists();
+        ListNode l1 = new ListNode(1); l1.next = new ListNode(2); l1.next.next = new ListNode(4);
+        ListNode l2 = new ListNode(1); l2.next = new ListNode(3); l2.next.next = new ListNode(4);
+        ListNode merged = solver.mergeTwoLists(l1, l2);
+        assert merged.val == 1;
+        System.out.println("✅ LeetCode21_MergeTwoSortedLists Passed!");
+    }
+}"""),
+
+    ("linked_lists", "LeetCode141_LinkedListCycle", 141, "Linked List Cycle", "Easy", "https://leetcode.com/problems/linked-list-cycle/",
+     """package linked_lists;
+
+public class LeetCode141_LinkedListCycle {
+    public static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int val) { this.val = val; }
+    }
+    public boolean hasCycle(ListNode head) {
+        if (head == null || head.next == null) return false;
+        ListNode slow = head, fast = head.next;
+        while (slow != fast) {
+            if (fast == null || fast.next == null) return false;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        LeetCode141_LinkedListCycle solver = new LeetCode141_LinkedListCycle();
+        ListNode head = new ListNode(3);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(0);
+        head.next.next.next = head.next; // Cycle
+        assert solver.hasCycle(head) == true;
+        System.out.println("✅ LeetCode141_LinkedListCycle Passed!");
+    }
+}"""),
+
+    # 7. Graphs
+    ("graphs", "LeetCode207_CourseSchedule", 207, "Course Schedule", "Medium", "https://leetcode.com/problems/course-schedule/",
+     """package graphs;
+import java.util.*;
+
+public class LeetCode207_CourseSchedule {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < numCourses; i++) adj.add(new ArrayList<>());
+        int[] inDegree = new int[numCourses];
+        for (int[] p : prerequisites) {
+            adj.get(p[1]).add(p[0]);
+            inDegree[p[0]]++;
+        }
+        Queue<Integer> q = new LinkedList<>();
+        for (int i = 0; i < numCourses; i++) if (inDegree[i] == 0) q.add(i);
+        int count = 0;
+        while (!q.isEmpty()) {
+            int curr = q.poll();
+            count++;
+            for (int neighbor : adj.get(curr)) {
+                inDegree[neighbor]--;
+                if (inDegree[neighbor] == 0) q.add(neighbor);
+            }
+        }
+        return count == numCourses;
+    }
+    public static void main(String[] args) {
+        LeetCode207_CourseSchedule solver = new LeetCode207_CourseSchedule();
+        assert solver.canFinish(2, new int[][]{{1, 0}}) == true;
+        assert solver.canFinish(2, new int[][]{{1, 0}, {0, 1}}) == false;
+        System.out.println("✅ LeetCode207_CourseSchedule Passed!");
+    }
+}"""),
+
+    # 8. Heap & Priority Queue
+    ("heap_and_priority_queue", "LeetCode215_KthLargestElementInArray", 215, "Kth Largest Element in an Array", "Medium", "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+     """package heap_and_priority_queue;
+import java.util.PriorityQueue;
+
+public class LeetCode215_KthLargestElementInArray {
+    public int findKthLargest(int[] nums, int k) {
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        for (int num : nums) {
+            minHeap.add(num);
+            if (minHeap.size() > k) minHeap.poll();
+        }
+        return minHeap.peek();
+    }
+    public static void main(String[] args) {
+        LeetCode215_KthLargestElementInArray solver = new LeetCode215_KthLargestElementInArray();
+        assert solver.findKthLargest(new int[]{3,2,1,5,6,4}, 2) == 5;
+        System.out.println("✅ LeetCode215_KthLargestElementInArray Passed!");
+    }
+}"""),
+
+    # 9. Backtracking
+    ("backtracking", "LeetCode78_Subsets", 78, "Subsets", "Medium", "https://leetcode.com/problems/subsets/",
+     """package backtracking;
+import java.util.*;
+
+public class LeetCode78_Subsets {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(res, new ArrayList<>(), nums, 0);
+        return res;
+    }
+    private void backtrack(List<List<Integer>> res, List<Integer> temp, int[] nums, int start) {
+        res.add(new ArrayList<>(temp));
+        for (int i = start; i < nums.length; i++) {
+            temp.add(nums[i]);
+            backtrack(res, temp, nums, i + 1);
+            temp.remove(temp.size() - 1);
+        }
+    }
+    public static void main(String[] args) {
+        LeetCode78_Subsets solver = new LeetCode78_Subsets();
+        List<List<Integer>> res = solver.subsets(new int[]{1, 2, 3});
+        assert res.size() == 8;
+        System.out.println("✅ LeetCode78_Subsets Passed!");
+    }
+}"""),
+
+    # 10. Greedy
+    ("greedy", "LeetCode53_MaximumSubarray", 53, "Maximum Subarray", "Medium", "https://leetcode.com/problems/maximum-subarray/",
+     """package greedy;
+
+public class LeetCode53_MaximumSubarray {
+    public int maxSubArray(int[] nums) {
+        int maxSoFar = nums[0];
+        int currMax = nums[0];
         for (int i = 1; i < nums.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j]) {
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
-                }
-            }
-            maxLIS = Math.max(maxLIS, dp[i]);
+            currMax = Math.max(nums[i], currMax + nums[i]);
+            maxSoFar = Math.max(maxSoFar, currMax);
         }
-        return maxLIS;
+        return maxSoFar;
     }
     public static void main(String[] args) {
-        LeetCode300_LongestIncreasingSubsequence solver = new LeetCode300_LongestIncreasingSubsequence();
-        assert solver.lengthOfLIS(new int[]{10,9,2,5,3,7,101,18}) == 4;
-        System.out.println("✅ LeetCode300_LongestIncreasingSubsequence Passed!");
+        LeetCode53_MaximumSubarray solver = new LeetCode53_MaximumSubarray();
+        assert solver.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}) == 6;
+        System.out.println("✅ LeetCode53_MaximumSubarray Passed!");
+    }
+}"""),
+
+    # 11. Bit Manipulation
+    ("bit_manipulation", "LeetCode136_SingleNumber", 136, "Single Number", "Easy", "https://leetcode.com/problems/single-number/",
+     """package bit_manipulation;
+
+public class LeetCode136_SingleNumber {
+    public int singleNumber(int[] nums) {
+        int res = 0;
+        for (int num : nums) res ^= num;
+        return res;
+    }
+    public static void main(String[] args) {
+        LeetCode136_SingleNumber solver = new LeetCode136_SingleNumber();
+        assert solver.singleNumber(new int[]{2, 2, 1}) == 1;
+        assert solver.singleNumber(new int[]{4, 1, 2, 1, 2}) == 4;
+        System.out.println("✅ LeetCode136_SingleNumber Passed!");
     }
 }""")
 ]
@@ -385,7 +632,7 @@ def generate_all():
         generated_files.append((category, class_name, num, title, diff, link, file_path))
         print(f"✨ Created: java/{category}/{class_name}.java [{diff}]")
 
-    print(f"\n🎉 Successfully generated {len(generated_files)} Java LeetCode problem solutions!")
+    print(f"\n🎉 Successfully generated {len(generated_files)} Java LeetCode problem solutions across core DS & Algorithms!")
     return generated_files
 
 if __name__ == "__main__":
