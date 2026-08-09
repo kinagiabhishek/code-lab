@@ -13,6 +13,6 @@ public class Candy {
     public static void main(String[] args) {
         Candy solver = new Candy();
         assert solver.candy(new int[]{1,2}) == 0;
-        System.out.println("✅ Candy (Candy) Passed!");
+        System.out.println("✅ Candy Passed!");
     }
 }

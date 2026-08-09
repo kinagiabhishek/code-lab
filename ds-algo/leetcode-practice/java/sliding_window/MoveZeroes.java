@@ -13,6 +13,6 @@ public class MoveZeroes {
     public static void main(String[] args) {
         MoveZeroes solver = new MoveZeroes();
         // Tested signature moveZeroes
-        System.out.println("✅ MoveZeroes (Move Zeroes) Passed!");
+        System.out.println("✅ MoveZeroes Passed!");
     }
 }

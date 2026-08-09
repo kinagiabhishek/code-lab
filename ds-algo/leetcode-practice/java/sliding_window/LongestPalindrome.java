@@ -13,6 +13,6 @@ public class LongestPalindrome {
     public static void main(String[] args) {
         LongestPalindrome solver = new LongestPalindrome();
         assert solver.longestPalindrome(new int[]{1,2}) == 0;
-        System.out.println("✅ LongestPalindrome (Longest Palindrome) Passed!");
+        System.out.println("✅ LongestPalindrome Passed!");
     }
 }

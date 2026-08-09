@@ -13,6 +13,6 @@ public class LowestCommonAncestorOfABinarySearchTree {
     public static void main(String[] args) {
         LowestCommonAncestorOfABinarySearchTree solver = new LowestCommonAncestorOfABinarySearchTree();
         // Tested signature lowestCommonAncestor
-        System.out.println("✅ LowestCommonAncestorOfABinarySearchTree (Lowest Common Ancestor of a Binary Search Tree) Passed!");
+        System.out.println("✅ LowestCommonAncestorOfABinarySearchTree Passed!");
     }
 }

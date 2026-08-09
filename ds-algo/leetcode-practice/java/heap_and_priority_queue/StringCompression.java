@@ -13,6 +13,6 @@ public class StringCompression {
     public static void main(String[] args) {
         StringCompression solver = new StringCompression();
         assert solver.compress(new int[]{1,2}) == 0;
-        System.out.println("✅ StringCompression (String Compression) Passed!");
+        System.out.println("✅ StringCompression Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class MaximumProductSubarray {
     public static void main(String[] args) {
         MaximumProductSubarray solver = new MaximumProductSubarray();
         assert solver.maxProduct(new int[]{1,2}) == 0;
-        System.out.println("✅ MaximumProductSubarray (Maximum Product Subarray) Passed!");
+        System.out.println("✅ MaximumProductSubarray Passed!");
     }
 }

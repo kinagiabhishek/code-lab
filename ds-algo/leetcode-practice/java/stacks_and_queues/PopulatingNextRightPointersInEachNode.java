@@ -13,6 +13,6 @@ public class PopulatingNextRightPointersInEachNode {
     public static void main(String[] args) {
         PopulatingNextRightPointersInEachNode solver = new PopulatingNextRightPointersInEachNode();
         // Tested signature Node
-        System.out.println("✅ PopulatingNextRightPointersInEachNode (Populating Next Right Pointers in Each Node) Passed!");
+        System.out.println("✅ PopulatingNextRightPointersInEachNode Passed!");
     }
 }

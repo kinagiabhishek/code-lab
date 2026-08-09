@@ -13,6 +13,6 @@ public class NumberOfProvinces {
     public static void main(String[] args) {
         NumberOfProvinces solver = new NumberOfProvinces();
         assert solver.findCircleNum(new int[]{1,2}) == 0;
-        System.out.println("✅ NumberOfProvinces (Number of Provinces) Passed!");
+        System.out.println("✅ NumberOfProvinces Passed!");
     }
 }

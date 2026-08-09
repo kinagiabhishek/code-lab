@@ -13,6 +13,6 @@ public class LongestConsecutiveSequence {
     public static void main(String[] args) {
         LongestConsecutiveSequence solver = new LongestConsecutiveSequence();
         assert solver.longestConsecutive(new int[]{1,2}) == 0;
-        System.out.println("✅ LongestConsecutiveSequence (Longest Consecutive Sequence) Passed!");
+        System.out.println("✅ LongestConsecutiveSequence Passed!");
     }
 }

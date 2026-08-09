@@ -13,6 +13,6 @@ public class RomanToInteger {
     public static void main(String[] args) {
         RomanToInteger solver = new RomanToInteger();
         assert solver.romanToInt(new int[]{1,2}) == 0;
-        System.out.println("✅ RomanToInteger (Roman to Integer) Passed!");
+        System.out.println("✅ RomanToInteger Passed!");
     }
 }

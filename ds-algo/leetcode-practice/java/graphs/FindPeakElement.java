@@ -13,6 +13,6 @@ public class FindPeakElement {
     public static void main(String[] args) {
         FindPeakElement solver = new FindPeakElement();
         assert solver.findPeakElement(new int[]{1,2}) == 0;
-        System.out.println("✅ FindPeakElement (Find Peak Element) Passed!");
+        System.out.println("✅ FindPeakElement Passed!");
     }
 }

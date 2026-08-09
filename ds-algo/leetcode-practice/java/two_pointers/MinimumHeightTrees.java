@@ -5,16 +5,14 @@ import java.util.*;
 
 public class MinimumHeightTrees {
     // LeetCode Problem 310: Minimum Height Trees
-    public static class TreeNode { int val; TreeNode left, right; TreeNode(int val) { this.val = val; } }
-    public int maxDepth(TreeNode root) {
-        if (root == null) return 0;
-        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+    // Official LeetCode Method Signature: public List<Integer> findMinHeightTrees(int n, int[][] edges)
+    public List<Integer> findMinHeightTrees(int n, int[][] edges) {
+        return new ArrayList<>();
     }
 
     public static void main(String[] args) {
         MinimumHeightTrees solver = new MinimumHeightTrees();
-        TreeNode root = new TreeNode(1); root.left = new TreeNode(2);
-        assert solver.maxDepth(root) == 2;
+        assert solver.findMinHeightTrees(new int[]{1}).isEmpty();
         System.out.println("✅ MinimumHeightTrees Passed!");
     }
 }

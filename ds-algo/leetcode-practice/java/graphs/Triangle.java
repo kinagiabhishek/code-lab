@@ -13,6 +13,6 @@ public class Triangle {
     public static void main(String[] args) {
         Triangle solver = new Triangle();
         assert solver.minimumTotal(new int[]{1,2}) == 0;
-        System.out.println("✅ Triangle (Triangle) Passed!");
+        System.out.println("✅ Triangle Passed!");
     }
 }

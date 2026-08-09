@@ -13,6 +13,6 @@ public class RotateArray {
     public static void main(String[] args) {
         RotateArray solver = new RotateArray();
         // Tested signature rotate
-        System.out.println("✅ RotateArray (Rotate Array) Passed!");
+        System.out.println("✅ RotateArray Passed!");
     }
 }

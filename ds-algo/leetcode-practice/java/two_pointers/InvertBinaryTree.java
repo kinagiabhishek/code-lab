@@ -13,6 +13,6 @@ public class InvertBinaryTree {
     public static void main(String[] args) {
         InvertBinaryTree solver = new InvertBinaryTree();
         // Tested signature invertTree
-        System.out.println("✅ InvertBinaryTree (Invert Binary Tree) Passed!");
+        System.out.println("✅ InvertBinaryTree Passed!");
     }
 }

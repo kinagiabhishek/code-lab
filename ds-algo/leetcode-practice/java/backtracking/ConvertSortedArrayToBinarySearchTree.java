@@ -13,6 +13,6 @@ public class ConvertSortedArrayToBinarySearchTree {
     public static void main(String[] args) {
         ConvertSortedArrayToBinarySearchTree solver = new ConvertSortedArrayToBinarySearchTree();
         // Tested signature sortedArrayToBST
-        System.out.println("✅ ConvertSortedArrayToBinarySearchTree (Convert Sorted Array to Binary Search Tree) Passed!");
+        System.out.println("✅ ConvertSortedArrayToBinarySearchTree Passed!");
     }
 }

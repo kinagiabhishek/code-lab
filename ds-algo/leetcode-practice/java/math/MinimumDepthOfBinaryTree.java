@@ -13,6 +13,6 @@ public class MinimumDepthOfBinaryTree {
     public static void main(String[] args) {
         MinimumDepthOfBinaryTree solver = new MinimumDepthOfBinaryTree();
         assert solver.minDepth(new int[]{1,2}) == 0;
-        System.out.println("✅ MinimumDepthOfBinaryTree (Minimum Depth of Binary Tree) Passed!");
+        System.out.println("✅ MinimumDepthOfBinaryTree Passed!");
     }
 }

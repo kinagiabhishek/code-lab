@@ -13,6 +13,6 @@ public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         RemoveDuplicatesFromSortedArray solver = new RemoveDuplicatesFromSortedArray();
         assert solver.removeDuplicates(new int[]{1,2}) == 0;
-        System.out.println("✅ RemoveDuplicatesFromSortedArray (Remove Duplicates from Sorted Array) Passed!");
+        System.out.println("✅ RemoveDuplicatesFromSortedArray Passed!");
     }
 }

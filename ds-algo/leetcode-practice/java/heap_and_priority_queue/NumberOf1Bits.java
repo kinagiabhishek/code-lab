@@ -13,6 +13,6 @@ public class NumberOf1Bits {
     public static void main(String[] args) {
         NumberOf1Bits solver = new NumberOf1Bits();
         assert solver.hammingWeight(new int[]{1,2}) == 0;
-        System.out.println("✅ NumberOf1Bits (Number of 1 Bits) Passed!");
+        System.out.println("✅ NumberOf1Bits Passed!");
     }
 }

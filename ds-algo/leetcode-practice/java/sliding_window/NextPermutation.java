@@ -13,6 +13,6 @@ public class NextPermutation {
     public static void main(String[] args) {
         NextPermutation solver = new NextPermutation();
         // Tested signature nextPermutation
-        System.out.println("✅ NextPermutation (Next Permutation) Passed!");
+        System.out.println("✅ NextPermutation Passed!");
     }
 }

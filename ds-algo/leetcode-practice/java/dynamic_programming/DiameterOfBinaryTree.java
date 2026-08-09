@@ -13,6 +13,6 @@ public class DiameterOfBinaryTree {
     public static void main(String[] args) {
         DiameterOfBinaryTree solver = new DiameterOfBinaryTree();
         assert solver.diameterOfBinaryTree(new int[]{1,2}) == 0;
-        System.out.println("✅ DiameterOfBinaryTree (Diameter of Binary Tree) Passed!");
+        System.out.println("✅ DiameterOfBinaryTree Passed!");
     }
 }

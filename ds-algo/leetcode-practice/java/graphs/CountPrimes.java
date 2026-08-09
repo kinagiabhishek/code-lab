@@ -13,6 +13,6 @@ public class CountPrimes {
     public static void main(String[] args) {
         CountPrimes solver = new CountPrimes();
         assert solver.countPrimes(new int[]{1,2}) == 0;
-        System.out.println("✅ CountPrimes (Count Primes) Passed!");
+        System.out.println("✅ CountPrimes Passed!");
     }
 }

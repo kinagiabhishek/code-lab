@@ -13,6 +13,6 @@ public class MaximumDepthOfBinaryTree {
     public static void main(String[] args) {
         MaximumDepthOfBinaryTree solver = new MaximumDepthOfBinaryTree();
         assert solver.maxDepth(new int[]{1,2}) == 0;
-        System.out.println("✅ MaximumDepthOfBinaryTree (Maximum Depth of Binary Tree) Passed!");
+        System.out.println("✅ MaximumDepthOfBinaryTree Passed!");
     }
 }

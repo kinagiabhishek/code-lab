@@ -13,6 +13,6 @@ public class MaxConsecutiveOnes {
     public static void main(String[] args) {
         MaxConsecutiveOnes solver = new MaxConsecutiveOnes();
         assert solver.findMaxConsecutiveOnes(new int[]{1,2}) == 0;
-        System.out.println("✅ MaxConsecutiveOnes (Max Consecutive Ones) Passed!");
+        System.out.println("✅ MaxConsecutiveOnes Passed!");
     }
 }

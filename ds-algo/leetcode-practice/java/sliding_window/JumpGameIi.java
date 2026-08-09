@@ -13,6 +13,6 @@ public class JumpGameIi {
     public static void main(String[] args) {
         JumpGameIi solver = new JumpGameIi();
         assert solver.jump(new int[]{1,2}) == 0;
-        System.out.println("✅ JumpGameIi (Jump Game II) Passed!");
+        System.out.println("✅ JumpGameIi Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class MinimumSizeSubarraySum {
     public static void main(String[] args) {
         MinimumSizeSubarraySum solver = new MinimumSizeSubarraySum();
         assert solver.minSubArrayLen(new int[]{1,2}) == 0;
-        System.out.println("✅ MinimumSizeSubarraySum (Minimum Size Subarray Sum) Passed!");
+        System.out.println("✅ MinimumSizeSubarraySum Passed!");
     }
 }

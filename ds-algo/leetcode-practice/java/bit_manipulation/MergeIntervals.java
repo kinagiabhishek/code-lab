@@ -13,6 +13,6 @@ public class MergeIntervals {
     public static void main(String[] args) {
         MergeIntervals solver = new MergeIntervals();
         // Tested signature merge
-        System.out.println("✅ MergeIntervals (Merge Intervals) Passed!");
+        System.out.println("✅ MergeIntervals Passed!");
     }
 }

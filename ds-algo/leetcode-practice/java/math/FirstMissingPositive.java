@@ -13,6 +13,6 @@ public class FirstMissingPositive {
     public static void main(String[] args) {
         FirstMissingPositive solver = new FirstMissingPositive();
         assert solver.firstMissingPositive(new int[]{1,2}) == 0;
-        System.out.println("✅ FirstMissingPositive (First Missing Positive) Passed!");
+        System.out.println("✅ FirstMissingPositive Passed!");
     }
 }

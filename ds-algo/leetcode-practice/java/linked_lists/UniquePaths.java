@@ -13,6 +13,6 @@ public class UniquePaths {
     public static void main(String[] args) {
         UniquePaths solver = new UniquePaths();
         assert solver.uniquePaths(new int[]{1,2}) == 0;
-        System.out.println("✅ UniquePaths (Unique Paths) Passed!");
+        System.out.println("✅ UniquePaths Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class WordLadder {
     public static void main(String[] args) {
         WordLadder solver = new WordLadder();
         assert solver.ladderLength(new int[]{1,2}) == 0;
-        System.out.println("✅ WordLadder (Word Ladder) Passed!");
+        System.out.println("✅ WordLadder Passed!");
     }
 }

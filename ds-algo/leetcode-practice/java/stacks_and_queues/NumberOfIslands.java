@@ -13,6 +13,6 @@ public class NumberOfIslands {
     public static void main(String[] args) {
         NumberOfIslands solver = new NumberOfIslands();
         assert solver.numIslands(new int[]{1,2}) == 0;
-        System.out.println("✅ NumberOfIslands (Number of Islands) Passed!");
+        System.out.println("✅ NumberOfIslands Passed!");
     }
 }

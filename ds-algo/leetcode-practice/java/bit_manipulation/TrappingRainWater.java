@@ -13,6 +13,6 @@ public class TrappingRainWater {
     public static void main(String[] args) {
         TrappingRainWater solver = new TrappingRainWater();
         assert solver.trap(new int[]{1,2}) == 0;
-        System.out.println("✅ TrappingRainWater (Trapping Rain Water) Passed!");
+        System.out.println("✅ TrappingRainWater Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class FibonacciNumber {
     public static void main(String[] args) {
         FibonacciNumber solver = new FibonacciNumber();
         assert solver.fib(new int[]{1,2}) == 0;
-        System.out.println("✅ FibonacciNumber (Fibonacci Number) Passed!");
+        System.out.println("✅ FibonacciNumber Passed!");
     }
 }

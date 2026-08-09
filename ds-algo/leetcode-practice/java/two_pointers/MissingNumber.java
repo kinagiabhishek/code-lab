@@ -13,6 +13,6 @@ public class MissingNumber {
     public static void main(String[] args) {
         MissingNumber solver = new MissingNumber();
         assert solver.missingNumber(new int[]{1,2}) == 0;
-        System.out.println("✅ MissingNumber (Missing Number) Passed!");
+        System.out.println("✅ MissingNumber Passed!");
     }
 }

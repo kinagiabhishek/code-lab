@@ -13,6 +13,6 @@ public class LongestRepeatingCharacterReplacement {
     public static void main(String[] args) {
         LongestRepeatingCharacterReplacement solver = new LongestRepeatingCharacterReplacement();
         assert solver.characterReplacement(new int[]{1,2}) == 0;
-        System.out.println("✅ LongestRepeatingCharacterReplacement (Longest Repeating Character Replacement) Passed!");
+        System.out.println("✅ LongestRepeatingCharacterReplacement Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class GasStation {
     public static void main(String[] args) {
         GasStation solver = new GasStation();
         assert solver.canCompleteCircuit(new int[]{1,2}) == 0;
-        System.out.println("✅ GasStation (Gas Station) Passed!");
+        System.out.println("✅ GasStation Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class KthSmallestElementInABst {
     public static void main(String[] args) {
         KthSmallestElementInABst solver = new KthSmallestElementInABst();
         assert solver.kthSmallest(new int[]{1,2}) == 0;
-        System.out.println("✅ KthSmallestElementInABst (Kth Smallest Element in a BST) Passed!");
+        System.out.println("✅ KthSmallestElementInABst Passed!");
     }
 }

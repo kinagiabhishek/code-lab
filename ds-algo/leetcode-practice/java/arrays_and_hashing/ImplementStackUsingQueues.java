@@ -13,6 +13,6 @@ public class ImplementStackUsingQueues {
     public static void main(String[] args) {
         ImplementStackUsingQueues solver = new ImplementStackUsingQueues();
         // Tested signature MyStack
-        System.out.println("✅ ImplementStackUsingQueues (Implement Stack using Queues) Passed!");
+        System.out.println("✅ ImplementStackUsingQueues Passed!");
     }
 }

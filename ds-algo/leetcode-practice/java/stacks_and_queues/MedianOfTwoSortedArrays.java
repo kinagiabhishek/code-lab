@@ -13,6 +13,6 @@ public class MedianOfTwoSortedArrays {
     public static void main(String[] args) {
         MedianOfTwoSortedArrays solver = new MedianOfTwoSortedArrays();
         // Tested signature findMedianSortedArrays
-        System.out.println("✅ MedianOfTwoSortedArrays (Median of Two Sorted Arrays) Passed!");
+        System.out.println("✅ MedianOfTwoSortedArrays Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class DecodeWays {
     public static void main(String[] args) {
         DecodeWays solver = new DecodeWays();
         assert solver.numDecodings(new int[]{1,2}) == 0;
-        System.out.println("✅ DecodeWays (Decode Ways) Passed!");
+        System.out.println("✅ DecodeWays Passed!");
     }
 }

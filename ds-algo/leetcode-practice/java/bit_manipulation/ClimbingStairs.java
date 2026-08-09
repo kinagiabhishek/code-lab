@@ -13,6 +13,6 @@ public class ClimbingStairs {
     public static void main(String[] args) {
         ClimbingStairs solver = new ClimbingStairs();
         assert solver.climbStairs(new int[]{1,2}) == 0;
-        System.out.println("✅ ClimbingStairs (Climbing Stairs) Passed!");
+        System.out.println("✅ ClimbingStairs Passed!");
     }
 }

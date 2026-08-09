@@ -13,6 +13,6 @@ public class SingleElementInASortedArray {
     public static void main(String[] args) {
         SingleElementInASortedArray solver = new SingleElementInASortedArray();
         assert solver.singleNonDuplicate(new int[]{1,2}) == 0;
-        System.out.println("✅ SingleElementInASortedArray (Single Element in a Sorted Array) Passed!");
+        System.out.println("✅ SingleElementInASortedArray Passed!");
     }
 }

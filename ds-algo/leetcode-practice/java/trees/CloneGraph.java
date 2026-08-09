@@ -13,6 +13,6 @@ public class CloneGraph {
     public static void main(String[] args) {
         CloneGraph solver = new CloneGraph();
         // Tested signature Node
-        System.out.println("✅ CloneGraph (Clone Graph) Passed!");
+        System.out.println("✅ CloneGraph Passed!");
     }
 }

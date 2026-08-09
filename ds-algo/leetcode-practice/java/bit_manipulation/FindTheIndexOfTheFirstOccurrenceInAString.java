@@ -13,6 +13,6 @@ public class FindTheIndexOfTheFirstOccurrenceInAString {
     public static void main(String[] args) {
         FindTheIndexOfTheFirstOccurrenceInAString solver = new FindTheIndexOfTheFirstOccurrenceInAString();
         assert solver.strStr(new int[]{1,2}) == 0;
-        System.out.println("✅ FindTheIndexOfTheFirstOccurrenceInAString (Find the Index of the First Occurrence in a String) Passed!");
+        System.out.println("✅ FindTheIndexOfTheFirstOccurrenceInAString Passed!");
     }
 }

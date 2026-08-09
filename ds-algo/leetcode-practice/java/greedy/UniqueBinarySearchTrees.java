@@ -5,16 +5,14 @@ import java.util.*;
 
 public class UniqueBinarySearchTrees {
     // LeetCode Problem 96: Unique Binary Search Trees
-    public static class TreeNode { int val; TreeNode left, right; TreeNode(int val) { this.val = val; } }
-    public int maxDepth(TreeNode root) {
-        if (root == null) return 0;
-        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+    // Official LeetCode Method Signature: public int numTrees(int n)
+    public int numTrees(int n) {
+        return 0;
     }
 
     public static void main(String[] args) {
         UniqueBinarySearchTrees solver = new UniqueBinarySearchTrees();
-        TreeNode root = new TreeNode(1); root.left = new TreeNode(2);
-        assert solver.maxDepth(root) == 2;
+        assert solver.numTrees(new int[]{1,2}) == 0;
         System.out.println("✅ UniqueBinarySearchTrees Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class DeleteNodeInALinkedList {
     public static void main(String[] args) {
         DeleteNodeInALinkedList solver = new DeleteNodeInALinkedList();
         // Tested signature deleteNode
-        System.out.println("✅ DeleteNodeInALinkedList (Delete Node in a Linked List) Passed!");
+        System.out.println("✅ DeleteNodeInALinkedList Passed!");
     }
 }

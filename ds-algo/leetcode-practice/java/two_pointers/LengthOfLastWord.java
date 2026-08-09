@@ -13,6 +13,6 @@ public class LengthOfLastWord {
     public static void main(String[] args) {
         LengthOfLastWord solver = new LengthOfLastWord();
         assert solver.lengthOfLastWord(new int[]{1,2}) == 0;
-        System.out.println("✅ LengthOfLastWord (Length of Last Word) Passed!");
+        System.out.println("✅ LengthOfLastWord Passed!");
     }
 }

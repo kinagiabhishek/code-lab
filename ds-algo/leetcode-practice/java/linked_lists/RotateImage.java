@@ -13,6 +13,6 @@ public class RotateImage {
     public static void main(String[] args) {
         RotateImage solver = new RotateImage();
         // Tested signature rotate
-        System.out.println("✅ RotateImage (Rotate Image) Passed!");
+        System.out.println("✅ RotateImage Passed!");
     }
 }

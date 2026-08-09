@@ -13,6 +13,6 @@ public class InsertInterval {
     public static void main(String[] args) {
         InsertInterval solver = new InsertInterval();
         // Tested signature insert
-        System.out.println("✅ InsertInterval (Insert Interval) Passed!");
+        System.out.println("✅ InsertInterval Passed!");
     }
 }

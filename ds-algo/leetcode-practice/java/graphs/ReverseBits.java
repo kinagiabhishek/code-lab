@@ -13,6 +13,6 @@ public class ReverseBits {
     public static void main(String[] args) {
         ReverseBits solver = new ReverseBits();
         assert solver.reverseBits(new int[]{1,2}) == 0;
-        System.out.println("✅ ReverseBits (Reverse Bits) Passed!");
+        System.out.println("✅ ReverseBits Passed!");
     }
 }

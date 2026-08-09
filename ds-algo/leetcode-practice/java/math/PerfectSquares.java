@@ -13,6 +13,6 @@ public class PerfectSquares {
     public static void main(String[] args) {
         PerfectSquares solver = new PerfectSquares();
         assert solver.numSquares(new int[]{1,2}) == 0;
-        System.out.println("✅ PerfectSquares (Perfect Squares) Passed!");
+        System.out.println("✅ PerfectSquares Passed!");
     }
 }

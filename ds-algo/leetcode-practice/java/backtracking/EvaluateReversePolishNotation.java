@@ -13,6 +13,6 @@ public class EvaluateReversePolishNotation {
     public static void main(String[] args) {
         EvaluateReversePolishNotation solver = new EvaluateReversePolishNotation();
         assert solver.evalRPN(new int[]{1,2}) == 0;
-        System.out.println("✅ EvaluateReversePolishNotation (Evaluate Reverse Polish Notation) Passed!");
+        System.out.println("✅ EvaluateReversePolishNotation Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class DivideTwoIntegers {
     public static void main(String[] args) {
         DivideTwoIntegers solver = new DivideTwoIntegers();
         assert solver.divide(new int[]{1,2}) == 0;
-        System.out.println("✅ DivideTwoIntegers (Divide Two Integers) Passed!");
+        System.out.println("✅ DivideTwoIntegers Passed!");
     }
 }

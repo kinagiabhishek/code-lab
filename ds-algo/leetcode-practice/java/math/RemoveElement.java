@@ -13,6 +13,6 @@ public class RemoveElement {
     public static void main(String[] args) {
         RemoveElement solver = new RemoveElement();
         assert solver.removeElement(new int[]{1,2}) == 0;
-        System.out.println("✅ RemoveElement (Remove Element) Passed!");
+        System.out.println("✅ RemoveElement Passed!");
     }
 }

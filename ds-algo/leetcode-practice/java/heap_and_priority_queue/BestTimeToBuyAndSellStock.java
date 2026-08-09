@@ -13,6 +13,6 @@ public class BestTimeToBuyAndSellStock {
     public static void main(String[] args) {
         BestTimeToBuyAndSellStock solver = new BestTimeToBuyAndSellStock();
         assert solver.maxProfit(new int[]{1,2}) == 0;
-        System.out.println("✅ BestTimeToBuyAndSellStock (Best Time to Buy and Sell Stock) Passed!");
+        System.out.println("✅ BestTimeToBuyAndSellStock Passed!");
     }
 }

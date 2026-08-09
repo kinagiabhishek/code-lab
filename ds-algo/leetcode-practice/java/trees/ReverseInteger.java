@@ -13,6 +13,6 @@ public class ReverseInteger {
     public static void main(String[] args) {
         ReverseInteger solver = new ReverseInteger();
         assert solver.reverse(new int[]{1,2}) == 0;
-        System.out.println("✅ ReverseInteger (Reverse Integer) Passed!");
+        System.out.println("✅ ReverseInteger Passed!");
     }
 }

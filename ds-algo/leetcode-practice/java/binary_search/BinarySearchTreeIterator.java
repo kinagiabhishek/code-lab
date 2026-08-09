@@ -13,6 +13,6 @@ public class BinarySearchTreeIterator {
     public static void main(String[] args) {
         BinarySearchTreeIterator solver = new BinarySearchTreeIterator();
         // Tested signature BSTIterator
-        System.out.println("✅ BinarySearchTreeIterator (Binary Search Tree Iterator) Passed!");
+        System.out.println("✅ BinarySearchTreeIterator Passed!");
     }
 }

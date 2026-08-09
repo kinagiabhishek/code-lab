@@ -13,6 +13,6 @@ public class TargetSum {
     public static void main(String[] args) {
         TargetSum solver = new TargetSum();
         assert solver.findTargetSumWays(new int[]{1,2}) == 0;
-        System.out.println("✅ TargetSum (Target Sum) Passed!");
+        System.out.println("✅ TargetSum Passed!");
     }
 }

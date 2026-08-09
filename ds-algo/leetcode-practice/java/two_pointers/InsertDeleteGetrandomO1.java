@@ -13,6 +13,6 @@ public class InsertDeleteGetrandomO1 {
     public static void main(String[] args) {
         InsertDeleteGetrandomO1 solver = new InsertDeleteGetrandomO1();
         // Tested signature RandomizedSet
-        System.out.println("✅ InsertDeleteGetrandomO1 (Insert Delete GetRandom O(1)) Passed!");
+        System.out.println("✅ InsertDeleteGetrandomO1 Passed!");
     }
 }

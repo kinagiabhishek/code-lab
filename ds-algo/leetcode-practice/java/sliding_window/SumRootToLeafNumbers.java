@@ -13,6 +13,6 @@ public class SumRootToLeafNumbers {
     public static void main(String[] args) {
         SumRootToLeafNumbers solver = new SumRootToLeafNumbers();
         assert solver.sumNumbers(new int[]{1,2}) == 0;
-        System.out.println("✅ SumRootToLeafNumbers (Sum Root to Leaf Numbers) Passed!");
+        System.out.println("✅ SumRootToLeafNumbers Passed!");
     }
 }

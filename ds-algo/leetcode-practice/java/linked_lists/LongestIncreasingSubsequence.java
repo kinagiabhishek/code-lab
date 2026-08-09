@@ -13,6 +13,6 @@ public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
         LongestIncreasingSubsequence solver = new LongestIncreasingSubsequence();
         assert solver.lengthOfLIS(new int[]{1,2}) == 0;
-        System.out.println("✅ LongestIncreasingSubsequence (Longest Increasing Subsequence) Passed!");
+        System.out.println("✅ LongestIncreasingSubsequence Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class FirstUniqueCharacterInAString {
     public static void main(String[] args) {
         FirstUniqueCharacterInAString solver = new FirstUniqueCharacterInAString();
         assert solver.firstUniqChar(new int[]{1,2}) == 0;
-        System.out.println("✅ FirstUniqueCharacterInAString (First Unique Character in a String) Passed!");
+        System.out.println("✅ FirstUniqueCharacterInAString Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class GuessNumberHigherOrLower {
     public static void main(String[] args) {
         GuessNumberHigherOrLower solver = new GuessNumberHigherOrLower();
         assert solver.guessNumber(new int[]{1,2}) == 0;
-        System.out.println("✅ GuessNumberHigherOrLower (Guess Number Higher or Lower) Passed!");
+        System.out.println("✅ GuessNumberHigherOrLower Passed!");
     }
 }

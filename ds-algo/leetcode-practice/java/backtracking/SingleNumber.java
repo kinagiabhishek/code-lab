@@ -13,6 +13,6 @@ public class SingleNumber {
     public static void main(String[] args) {
         SingleNumber solver = new SingleNumber();
         assert solver.singleNumber(new int[]{1,2}) == 0;
-        System.out.println("✅ SingleNumber (Single Number) Passed!");
+        System.out.println("✅ SingleNumber Passed!");
     }
 }

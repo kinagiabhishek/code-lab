@@ -13,6 +13,6 @@ public class P3sumClosest {
     public static void main(String[] args) {
         P3sumClosest solver = new P3sumClosest();
         assert solver.threeSumClosest(new int[]{1,2}) == 0;
-        System.out.println("✅ P3sumClosest (3Sum Closest) Passed!");
+        System.out.println("✅ P3sumClosest Passed!");
     }
 }

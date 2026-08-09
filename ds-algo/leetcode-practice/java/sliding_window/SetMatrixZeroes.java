@@ -13,6 +13,6 @@ public class SetMatrixZeroes {
     public static void main(String[] args) {
         SetMatrixZeroes solver = new SetMatrixZeroes();
         // Tested signature setZeroes
-        System.out.println("✅ SetMatrixZeroes (Set Matrix Zeroes) Passed!");
+        System.out.println("✅ SetMatrixZeroes Passed!");
     }
 }

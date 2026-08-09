@@ -13,6 +13,6 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
     public static void main(String[] args) {
         ConstructBinaryTreeFromPreorderAndInorderTraversal solver = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
         // Tested signature buildTree
-        System.out.println("✅ ConstructBinaryTreeFromPreorderAndInorderTraversal (Construct Binary Tree from Preorder and Inorder Traversal) Passed!");
+        System.out.println("✅ ConstructBinaryTreeFromPreorderAndInorderTraversal Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class CountCompleteTreeNodes {
     public static void main(String[] args) {
         CountCompleteTreeNodes solver = new CountCompleteTreeNodes();
         assert solver.countNodes(new int[]{1,2}) == 0;
-        System.out.println("✅ CountCompleteTreeNodes (Count Complete Tree Nodes) Passed!");
+        System.out.println("✅ CountCompleteTreeNodes Passed!");
     }
 }

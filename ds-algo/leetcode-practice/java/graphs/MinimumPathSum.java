@@ -13,6 +13,6 @@ public class MinimumPathSum {
     public static void main(String[] args) {
         MinimumPathSum solver = new MinimumPathSum();
         assert solver.minPathSum(new int[]{1,2}) == 0;
-        System.out.println("✅ MinimumPathSum (Minimum Path Sum) Passed!");
+        System.out.println("✅ MinimumPathSum Passed!");
     }
 }

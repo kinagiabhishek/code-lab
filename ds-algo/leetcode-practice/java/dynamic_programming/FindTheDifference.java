@@ -13,6 +13,6 @@ public class FindTheDifference {
     public static void main(String[] args) {
         FindTheDifference solver = new FindTheDifference();
         // Tested signature findTheDifference
-        System.out.println("✅ FindTheDifference (Find the Difference) Passed!");
+        System.out.println("✅ FindTheDifference Passed!");
     }
 }

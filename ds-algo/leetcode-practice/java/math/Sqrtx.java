@@ -13,6 +13,6 @@ public class Sqrtx {
     public static void main(String[] args) {
         Sqrtx solver = new Sqrtx();
         assert solver.mySqrt(new int[]{1,2}) == 0;
-        System.out.println("✅ Sqrtx (Sqrt(x)) Passed!");
+        System.out.println("✅ Sqrtx Passed!");
     }
 }

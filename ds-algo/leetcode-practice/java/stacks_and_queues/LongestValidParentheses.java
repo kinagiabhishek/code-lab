@@ -13,6 +13,6 @@ public class LongestValidParentheses {
     public static void main(String[] args) {
         LongestValidParentheses solver = new LongestValidParentheses();
         assert solver.longestValidParentheses(new int[]{1,2}) == 0;
-        System.out.println("✅ LongestValidParentheses (Longest Valid Parentheses) Passed!");
+        System.out.println("✅ LongestValidParentheses Passed!");
     }
 }

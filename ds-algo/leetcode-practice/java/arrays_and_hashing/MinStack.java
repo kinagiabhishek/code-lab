@@ -13,6 +13,6 @@ public class MinStack {
     public static void main(String[] args) {
         MinStack solver = new MinStack();
         // Tested signature MinStack
-        System.out.println("✅ MinStack (Min Stack) Passed!");
+        System.out.println("✅ MinStack Passed!");
     }
 }

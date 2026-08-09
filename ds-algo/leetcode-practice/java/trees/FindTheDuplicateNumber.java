@@ -13,6 +13,6 @@ public class FindTheDuplicateNumber {
     public static void main(String[] args) {
         FindTheDuplicateNumber solver = new FindTheDuplicateNumber();
         assert solver.findDuplicate(new int[]{1,2}) == 0;
-        System.out.println("✅ FindTheDuplicateNumber (Find the Duplicate Number) Passed!");
+        System.out.println("✅ FindTheDuplicateNumber Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class SudokuSolver {
     public static void main(String[] args) {
         SudokuSolver solver = new SudokuSolver();
         // Tested signature solveSudoku
-        System.out.println("✅ SudokuSolver (Sudoku Solver) Passed!");
+        System.out.println("✅ SudokuSolver Passed!");
     }
 }

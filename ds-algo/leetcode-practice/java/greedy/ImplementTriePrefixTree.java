@@ -13,6 +13,6 @@ public class ImplementTriePrefixTree {
     public static void main(String[] args) {
         ImplementTriePrefixTree solver = new ImplementTriePrefixTree();
         // Tested signature Trie
-        System.out.println("✅ ImplementTriePrefixTree (Implement Trie (Prefix Tree)) Passed!");
+        System.out.println("✅ ImplementTriePrefixTree Passed!");
     }
 }

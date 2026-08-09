@@ -13,6 +13,6 @@ public class KthLargestElementInAnArray {
     public static void main(String[] args) {
         KthLargestElementInAnArray solver = new KthLargestElementInAnArray();
         assert solver.findKthLargest(new int[]{1,2}) == 0;
-        System.out.println("✅ KthLargestElementInAnArray (Kth Largest Element in an Array) Passed!");
+        System.out.println("✅ KthLargestElementInAnArray Passed!");
     }
 }

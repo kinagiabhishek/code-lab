@@ -13,6 +13,6 @@ public class FindMedianFromDataStream {
     public static void main(String[] args) {
         FindMedianFromDataStream solver = new FindMedianFromDataStream();
         // Tested signature MedianFinder
-        System.out.println("✅ FindMedianFromDataStream (Find Median from Data Stream) Passed!");
+        System.out.println("✅ FindMedianFromDataStream Passed!");
     }
 }

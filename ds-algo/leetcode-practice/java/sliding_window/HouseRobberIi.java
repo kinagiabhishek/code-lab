@@ -13,6 +13,6 @@ public class HouseRobberIi {
     public static void main(String[] args) {
         HouseRobberIi solver = new HouseRobberIi();
         assert solver.rob(new int[]{1,2}) == 0;
-        System.out.println("✅ HouseRobberIi (House Robber II) Passed!");
+        System.out.println("✅ HouseRobberIi Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class AddDigits {
     public static void main(String[] args) {
         AddDigits solver = new AddDigits();
         assert solver.addDigits(new int[]{1,2}) == 0;
-        System.out.println("✅ AddDigits (Add Digits) Passed!");
+        System.out.println("✅ AddDigits Passed!");
     }
 }

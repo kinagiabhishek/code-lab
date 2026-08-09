@@ -13,6 +13,6 @@ public class ReverseString {
     public static void main(String[] args) {
         ReverseString solver = new ReverseString();
         // Tested signature reverseString
-        System.out.println("✅ ReverseString (Reverse String) Passed!");
+        System.out.println("✅ ReverseString Passed!");
     }
 }

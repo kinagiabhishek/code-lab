@@ -13,6 +13,6 @@ public class EditDistance {
     public static void main(String[] args) {
         EditDistance solver = new EditDistance();
         assert solver.minDistance(new int[]{1,2}) == 0;
-        System.out.println("✅ EditDistance (Edit Distance) Passed!");
+        System.out.println("✅ EditDistance Passed!");
     }
 }

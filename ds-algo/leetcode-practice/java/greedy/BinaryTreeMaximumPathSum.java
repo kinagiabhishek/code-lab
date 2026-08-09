@@ -13,6 +13,6 @@ public class BinaryTreeMaximumPathSum {
     public static void main(String[] args) {
         BinaryTreeMaximumPathSum solver = new BinaryTreeMaximumPathSum();
         assert solver.maxPathSum(new int[]{1,2}) == 0;
-        System.out.println("✅ BinaryTreeMaximumPathSum (Binary Tree Maximum Path Sum) Passed!");
+        System.out.println("✅ BinaryTreeMaximumPathSum Passed!");
     }
 }

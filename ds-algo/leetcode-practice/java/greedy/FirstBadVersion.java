@@ -13,6 +13,6 @@ public class FirstBadVersion {
     public static void main(String[] args) {
         FirstBadVersion solver = new FirstBadVersion();
         assert solver.firstBadVersion(new int[]{1,2}) == 0;
-        System.out.println("✅ FirstBadVersion (First Bad Version) Passed!");
+        System.out.println("✅ FirstBadVersion Passed!");
     }
 }

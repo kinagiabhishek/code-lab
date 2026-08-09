@@ -13,6 +13,6 @@ public class FindMinimumInRotatedSortedArray {
     public static void main(String[] args) {
         FindMinimumInRotatedSortedArray solver = new FindMinimumInRotatedSortedArray();
         assert solver.findMin(new int[]{1,2}) == 0;
-        System.out.println("✅ FindMinimumInRotatedSortedArray (Find Minimum in Rotated Sorted Array) Passed!");
+        System.out.println("✅ FindMinimumInRotatedSortedArray Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class LruCache {
     public static void main(String[] args) {
         LruCache solver = new LruCache();
         // Tested signature LRUCache
-        System.out.println("✅ LruCache (LRU Cache) Passed!");
+        System.out.println("✅ LruCache Passed!");
     }
 }

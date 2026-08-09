@@ -13,6 +13,6 @@ public class SurroundedRegions {
     public static void main(String[] args) {
         SurroundedRegions solver = new SurroundedRegions();
         // Tested signature solve
-        System.out.println("✅ SurroundedRegions (Surrounded Regions) Passed!");
+        System.out.println("✅ SurroundedRegions Passed!");
     }
 }

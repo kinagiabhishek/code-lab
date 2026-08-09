@@ -13,6 +13,6 @@ public class SearchInRotatedSortedArray {
     public static void main(String[] args) {
         SearchInRotatedSortedArray solver = new SearchInRotatedSortedArray();
         assert solver.search(new int[]{1,2}) == 0;
-        System.out.println("✅ SearchInRotatedSortedArray (Search in Rotated Sorted Array) Passed!");
+        System.out.println("✅ SearchInRotatedSortedArray Passed!");
     }
 }

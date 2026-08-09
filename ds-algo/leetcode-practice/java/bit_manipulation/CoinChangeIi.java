@@ -13,6 +13,6 @@ public class CoinChangeIi {
     public static void main(String[] args) {
         CoinChangeIi solver = new CoinChangeIi();
         assert solver.change(new int[]{1,2}) == 0;
-        System.out.println("✅ CoinChangeIi (Coin Change II) Passed!");
+        System.out.println("✅ CoinChangeIi Passed!");
     }
 }

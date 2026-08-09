@@ -13,6 +13,6 @@ public class SearchInsertPosition {
     public static void main(String[] args) {
         SearchInsertPosition solver = new SearchInsertPosition();
         assert solver.searchInsert(new int[]{1,2}) == 0;
-        System.out.println("✅ SearchInsertPosition (Search Insert Position) Passed!");
+        System.out.println("✅ SearchInsertPosition Passed!");
     }
 }

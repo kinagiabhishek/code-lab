@@ -13,6 +13,6 @@ public class MergeSortedArray {
     public static void main(String[] args) {
         MergeSortedArray solver = new MergeSortedArray();
         // Tested signature merge
-        System.out.println("✅ MergeSortedArray (Merge Sorted Array) Passed!");
+        System.out.println("✅ MergeSortedArray Passed!");
     }
 }

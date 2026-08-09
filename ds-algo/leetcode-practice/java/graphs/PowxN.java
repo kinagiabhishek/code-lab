@@ -13,6 +13,6 @@ public class PowxN {
     public static void main(String[] args) {
         PowxN solver = new PowxN();
         // Tested signature myPow
-        System.out.println("✅ PowxN (Pow(x, n)) Passed!");
+        System.out.println("✅ PowxN Passed!");
     }
 }

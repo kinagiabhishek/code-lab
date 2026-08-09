@@ -13,6 +13,6 @@ public class FlattenBinaryTreeToLinkedList {
     public static void main(String[] args) {
         FlattenBinaryTreeToLinkedList solver = new FlattenBinaryTreeToLinkedList();
         // Tested signature flatten
-        System.out.println("✅ FlattenBinaryTreeToLinkedList (Flatten Binary Tree to Linked List) Passed!");
+        System.out.println("✅ FlattenBinaryTreeToLinkedList Passed!");
     }
 }

@@ -13,6 +13,6 @@ public class ContainerWithMostWater {
     public static void main(String[] args) {
         ContainerWithMostWater solver = new ContainerWithMostWater();
         assert solver.maxArea(new int[]{1,2}) == 0;
-        System.out.println("✅ ContainerWithMostWater (Container With Most Water) Passed!");
+        System.out.println("✅ ContainerWithMostWater Passed!");
     }
 }

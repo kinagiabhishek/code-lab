@@ -13,6 +13,6 @@ public class SubarraySumEqualsK {
     public static void main(String[] args) {
         SubarraySumEqualsK solver = new SubarraySumEqualsK();
         assert solver.subarraySum(new int[]{1,2}) == 0;
-        System.out.println("✅ SubarraySumEqualsK (Subarray Sum Equals K) Passed!");
+        System.out.println("✅ SubarraySumEqualsK Passed!");
     }
 }

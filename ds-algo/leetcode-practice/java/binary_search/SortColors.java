@@ -13,6 +13,6 @@ public class SortColors {
     public static void main(String[] args) {
         SortColors solver = new SortColors();
         // Tested signature sortColors
-        System.out.println("✅ SortColors (Sort Colors) Passed!");
+        System.out.println("✅ SortColors Passed!");
     }
 }

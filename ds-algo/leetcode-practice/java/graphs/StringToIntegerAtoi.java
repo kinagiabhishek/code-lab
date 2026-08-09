@@ -13,6 +13,6 @@ public class StringToIntegerAtoi {
     public static void main(String[] args) {
         StringToIntegerAtoi solver = new StringToIntegerAtoi();
         assert solver.myAtoi(new int[]{1,2}) == 0;
-        System.out.println("✅ StringToIntegerAtoi (String to Integer (atoi)) Passed!");
+        System.out.println("✅ StringToIntegerAtoi Passed!");
     }
 }

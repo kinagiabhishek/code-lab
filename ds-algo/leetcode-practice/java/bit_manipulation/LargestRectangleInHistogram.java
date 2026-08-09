@@ -13,6 +13,6 @@ public class LargestRectangleInHistogram {
     public static void main(String[] args) {
         LargestRectangleInHistogram solver = new LargestRectangleInHistogram();
         assert solver.largestRectangleArea(new int[]{1,2}) == 0;
-        System.out.println("✅ LargestRectangleInHistogram (Largest Rectangle in Histogram) Passed!");
+        System.out.println("✅ LargestRectangleInHistogram Passed!");
     }
 }

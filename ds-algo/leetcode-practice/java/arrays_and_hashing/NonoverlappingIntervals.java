@@ -13,6 +13,6 @@ public class NonoverlappingIntervals {
     public static void main(String[] args) {
         NonoverlappingIntervals solver = new NonoverlappingIntervals();
         assert solver.eraseOverlapIntervals(new int[]{1,2}) == 0;
-        System.out.println("✅ NonoverlappingIntervals (Non-overlapping Intervals) Passed!");
+        System.out.println("✅ NonoverlappingIntervals Passed!");
     }
 }
