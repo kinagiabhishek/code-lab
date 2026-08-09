@@ -1,9 +1,9 @@
 # ⚡ Code Lab (`code-lab`)
 
-> Monorepo housing 200+ 100% verified, authentic Java Data Structures & Algorithms solutions, automations, and Python solvers.
+> Monorepo housing 335 100% verified, authentic Java Data Structures & Algorithms solutions, automations, and Python solvers.
 
 ![Java 26](https://img.shields.io/badge/Java_26-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/LeetCode_Solutions-200%2B_Authentic_Java-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
+![Problems Solved](https://img.shields.io/badge/LeetCode_Solutions-335_Authentic_Java-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
@@ -16,9 +16,9 @@
 code-lab/
 ├── ds-algo/                     # Data Structures & Algorithms
 │   ├── java/                    # Core Java DS, Streams API, & LRU Cache
-│   └── leetcode-practice/       # 200+ Authentic LeetCode Java solutions with Line-1 Problem URLs
+│   └── leetcode-practice/       # 335 Authentic LeetCode Java solutions with Line-1 Problem URLs
 │       ├── java/                # Clean Java solution files organized by topic
-│       │   ├── arrays_and_hashing/        # TwoSum.java, CountAndSay.java, ArrayPartition.java, GroupAnagrams.java
+│       │   ├── arrays_and_hashing/        # TwoSum.java, CountAndSay.java, ArrayPartition.java, DesignAddAndSearchWordsDataStructure.java
 │       │   ├── two_pointers/              # TrappingRainWater.java, ThreeSum.java, FourSum.java, ContainerWithMostWater.java
 │       │   ├── sliding_window/            # MinimumWindowSubstring.java, LongestSubstringWithoutRepeatingCharacters.java
 │       │   ├── stacks_and_queues/         # ValidParentheses.java, EvaluateReversePolishNotation.java, DailyTemperatures.java
@@ -47,7 +47,7 @@ code-lab/
 ### 1. 🧮 Data Structures & Algorithms (`ds-algo/`)
 Contains custom implementations of core data structures and algorithm solutions in **Java**.
 - **Core Java DS**: Binary Search, LRU Cache design, Streams API utilities.
-- **200+ Authentic LeetCode Java Suite**: Every Java file is **100% authentic with exact LeetCode method signatures and assertion tests**, compiled and verified via OpenJDK 26 (`scripts/java_runner.py`).
+- **335 Authentic LeetCode Java Suite**: Every Java file is **100% authentic with exact LeetCode method signatures and assertion tests**, compiled and verified via OpenJDK 26 (`scripts/java_runner.py`).
 
 ### 2. 🤖 Automations (`automations/`)
 - **`resume-uploader`**: Automated browser scripts leveraging Selenium/Playwright for Chromium and Firefox environments.
