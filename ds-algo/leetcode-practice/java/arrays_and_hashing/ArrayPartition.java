@@ -5,19 +5,19 @@ import java.util.*;
 
 public class ArrayPartition {
     // LeetCode Problem 561: Array Partition
-    public int maxSubArray(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
-        int maxSoFar = nums[0], currMax = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            currMax = Math.max(nums[i], currMax + nums[i]);
-            maxSoFar = Math.max(maxSoFar, currMax);
+    public int arrayPairSum(int[] nums) {
+        Arrays.sort(nums);
+        int sum = 0;
+        for (int i = 0; i < nums.length; i += 2) {
+            sum += nums[i];
         }
-        return maxSoFar;
+        return sum;
     }
 
     public static void main(String[] args) {
         ArrayPartition solver = new ArrayPartition();
-        assert solver.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}) == 6;
+        assert solver.arrayPairSum(new int[]{1, 4, 3, 2}) == 4;
+        assert solver.arrayPairSum(new int[]{6, 2, 6, 5, 1, 2}) == 9;
         System.out.println("✅ ArrayPartition Passed!");
     }
 }
