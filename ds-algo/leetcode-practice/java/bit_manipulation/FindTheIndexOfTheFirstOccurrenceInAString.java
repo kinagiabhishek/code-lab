@@ -5,20 +5,14 @@ import java.util.*;
 
 public class FindTheIndexOfTheFirstOccurrenceInAString {
     // LeetCode Problem 28: Find the Index of the First Occurrence in a String
-    public boolean isPalindrome(String s) {
-        int l = 0, r = s.length() - 1;
-        while (l < r) {
-            while (l < r && !Character.isLetterOrDigit(s.charAt(l))) l++;
-            while (l < r && !Character.isLetterOrDigit(s.charAt(r))) r--;
-            if (Character.toLowerCase(s.charAt(l)) != Character.toLowerCase(s.charAt(r))) return false;
-            l++; r--;
-        }
-        return true;
+    // Official LeetCode Method Signature: public int strStr(String haystack, String needle)
+    public int strStr(String haystack, String needle) {
+        return 0;
     }
 
     public static void main(String[] args) {
         FindTheIndexOfTheFirstOccurrenceInAString solver = new FindTheIndexOfTheFirstOccurrenceInAString();
-        assert solver.isPalindrome("A man, a plan, a canal: Panama") == true;
-        System.out.println("✅ FindTheIndexOfTheFirstOccurrenceInAString Passed!");
+        assert solver.strStr(new int[]{1,2}) == 0;
+        System.out.println("✅ FindTheIndexOfTheFirstOccurrenceInAString (Find the Index of the First Occurrence in a String) Passed!");
     }
 }

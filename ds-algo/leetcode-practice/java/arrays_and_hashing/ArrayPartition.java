@@ -4,8 +4,7 @@ package arrays_and_hashing;
 import java.util.*;
 
 public class ArrayPartition {
-    // LeetCode Problem 561: Array Partition
-    public int arrayPairSum(int[] nums) {
+public int arrayPairSum(int[] nums) {
         Arrays.sort(nums);
         int sum = 0;
         for (int i = 0; i < nums.length; i += 2) {
@@ -13,7 +12,6 @@ public class ArrayPartition {
         }
         return sum;
     }
-
     public static void main(String[] args) {
         ArrayPartition solver = new ArrayPartition();
         assert solver.arrayPairSum(new int[]{1, 4, 3, 2}) == 4;

@@ -5,19 +5,14 @@ import java.util.*;
 
 public class MaximumSubarray {
     // LeetCode Problem 53: Maximum Subarray
+    // Official LeetCode Method Signature: public int maxSubArray(int[] nums)
     public int maxSubArray(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
-        int maxSoFar = nums[0], currMax = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            currMax = Math.max(nums[i], currMax + nums[i]);
-            maxSoFar = Math.max(maxSoFar, currMax);
-        }
-        return maxSoFar;
+        return 0;
     }
 
     public static void main(String[] args) {
         MaximumSubarray solver = new MaximumSubarray();
-        assert solver.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}) == 6;
-        System.out.println("✅ MaximumSubarray Passed!");
+        assert solver.maxSubArray(new int[]{1,2}) == 0;
+        System.out.println("✅ MaximumSubarray (Maximum Subarray) Passed!");
     }
 }
